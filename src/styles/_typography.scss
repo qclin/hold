@@ -1,0 +1,65 @@
+body {
+  font-family: "AtlasGrotesk-Regular", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "AtlasGrotesk-Regular", sans-serif;
+}
+
+#about-us {
+  font-family: AtlasGrotesk;
+  font-size: 25px;
+  line-height: 1.4;
+  letter-spacing: 0.04px;
+  color: $txt-gray;
+}
+.side-bar {
+  height: 18px;
+  font-family: "AtlasGrotesk-Bold", sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.07px;
+  color: $txt-gray-light;
+}
+
+.tag-item,
+.annotations {
+  font-family: "AtlasTypewriter-light", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: -0.5px;
+}
+
+.project-preview,
+.project-page {
+  h3 {
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 1.4;
+    letter-spacing: 0.04px;
+  }
+  .time-stamp {
+    font-family: "AtlasGrotesk-Bold", sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.07px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.03px;
+  }
+}
+
+#contact {
+  font-family: "AtlasGrotesk-Regular", sans-serif;
+  font-size: 25px;
+  line-height: 1.4;
+  letter-spacing: 0.04px;
+}

@@ -1,0 +1,29 @@
+$txt-gray: #1f1f1f;
+$txt-gray-light: #737373;
+
+$highlight-teal: #00c1aa;
+$bg-white: #ffffff;
+$bg-zerox-gray: #b3a4a8;
+
+.home-body {
+  background-image: linear-gradient(
+    to right,
+    $bg-white,
+    $bg-zerox-gray 25%,
+    $bg-white 65%
+  );
+}
+
+#project-section {
+  margin-top: 10em;
+  padding-bottom: 20em;
+}
+
+.text-box {
+  background: $bg-white;
+}
+
+#contact {
+  color: $txt-gray;
+  padding: 3em;
+}

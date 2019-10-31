@@ -1,0 +1,27 @@
+{
+  "data": [
+    { "id": 1, "label": "advocacy", "value": "advocacy" },
+    { "id": 2, "label": "cultural production", "value": "cultural_production" },
+    {
+      "id": 3,
+      "label": "environmental advocacy",
+      "value": "environmental_advocacy"
+    },
+    { "id": 4, "label": "ecology", "value": "ecology" },
+    { "id": 5, "label": "global health", "value": "global_health" },
+    {
+      "id": 6,
+      "label": "human+environment relations",
+      "value": "human_environment_relations"
+    },
+    {
+      "id": 7,
+      "label": "knowledge infrastructure",
+      "value": "knowledge_infrastructure"
+    },
+    { "id": 8, "label": "land management", "value": "land_management" },
+    { "id": 9, "label": "sustainability", "value": "sustainability" },
+    { "id": 10, "label": "resilience", "value": "resilience" },
+    { "id": 11, "label": "visibility", "value": "visibility" }
+  ]
+}
