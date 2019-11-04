@@ -1,5 +1,5 @@
-import React from "react";
-import { useRouteData } from "react-static";
+import React from 'react';
+import { useRouteData } from 'react-static';
 
 export default function TagPanel() {
   const { tags } = useRouteData();
@@ -10,7 +10,7 @@ export default function TagPanel() {
         <a
           key={tag.id}
           className="tag-item"
-          href={"#" + tag.value}
+          href={'#' + tag.value}
           onClick={() => console.log(tag.value)}
         >
           {tag.label}

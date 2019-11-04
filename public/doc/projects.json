@@ -4,65 +4,228 @@
       "id": 1,
       "name": "Ocean Archive",
       "date": "2018-2019",
-      "description": "Blahblahblah is cea non eos ipsus, essimolupis am nimporum latquas cus rem restrum la andendissunt dolut qui accum, oficta pos vit, vero et esequidis essitati iduciet et labo. Nam fugia quosam quae oficie nderisi con eatium harum ipsus soloribus enient qui dolorit veresti dolupidit atibus, sit, omnim vitiam.  \r\n  Blahblahblah is cea non eos ipsus, essimolupis am nimporum latquas cus rem restrum la andendissunt dolut qui accum, oficta pos vit, vero et esequidis essitati iduciet et labo. Nam fugia quosam quae oficie nderisi con eatium harum ipsus soloribus enient qui dolorit veresti dolupidit atibus, sit, omnim vitiam. \r\n Blahblahblah is cea non eos ipsus, essimolupis am nimporum latquas cus rem restrum la andendissunt dolut qui accum, oficta pos vit, vero et esequidis essitati iduciet et labo. Nam fugia quosam quae oficie nderisi con eatium harum ipsus soloribus enient qui dolorit veresti dolupidit atibus, sit, omnim vitiam. \r\n  Blahblahblah is cea non eos ipsus, essimolupis am nimporum latquas cus rem restrum la andendissunt dolut qui accum, oficta pos vit, vero et esequidis essitati iduciet et labo. Nam fugia quosam quae oficie nderisi con eatium harum ipsus soloribus enient qui dolorit veresti dolupidit atibus, sit, omnim vitiam. \r\n  Blahblahblah is cea non eos ipsus, essimolupis am nimporum latquas cus rem restrum la andendissunt dolut qui accum, oficta pos vit, vero et esequidis essitati iduciet et labo. Nam fugia quosam quae oficie nderisi con eatium harum ipsus soloribus enient qui dolorit veresti dolupidit atibus, sit, omnim vitiam.",
+      "blurb": "Blahblahblah is cea non eos ipsus, essimolupis am nimporum latquas cus rem restrum la andendissunt dolut qui accum, oficta pos vit, vero et esequidis essitati iduciet et labo. Nam fugia quosam quae oficie nderisi con eatium harum ipsus soloribus enient qui dolorit veresti dolupidit atibus, sit, omnim vitiam. ",
+      "details": {
+        "intro": " Blahblahblah is cea non eos ipsus, essimolupis am nimporum latquas cus rem restrum la andendissunt dolut qui accum, oficta pos vit, vero et esequidis essitati iduciet et labo. Nam fugia quosam quae oficie nderisi con eatium harum ipsus soloribus enient qui dolorit veresti dolupidit atibus, sit, omnim vitiam. \r\n Blahblahblah is cea non eos ipsus, essimolupis am nimporum latquas cus rem restrum la andendissunt dolut qui accum, oficta pos vit, vero et esequidis essitati iduciet et labo. Nam fugia quosam quae oficie nderisi con eatium harum ipsus soloribus enient qui dolorit veresti dolupidit atibus, sit, omnim vitiam. \r\n  Blahblahblah is cea non eos ipsus, essimolupis am nimporum latquas cus rem restrum la andendissunt dolut qui accum, oficta pos vit, vero et esequidis essitati iduciet et labo. Nam fugia quosam quae oficie nderisi con eatium harum ipsus soloribus enient qui dolorit veresti dolupidit atibus, sit, omnim vitiam. \r\n  Blahblahblah is cea non eos ipsus, essimolupis am nimporum latquas cus rem restrum la andendissunt dolut qui accum, oficta pos vit, vero et esequidis essitati iduciet et labo. Nam fugia quosam quae oficie nderisi con eatium harum ipsus soloribus enient qui dolorit veresti dolupidit atibus, sit, omnim vitiam."
+      },
       "images": [
-        "mountains-back-view-4.JPG",
-        "Mountains-highest-point-4.JPG",
-        "Paxtle-trees-1.JPG",
-        "Paxtle-trees-7.JPG",
-        "Mountains-highest-point3.JPG"
+        {
+          "name": "Mountains-highest-point-4",
+          "path": "/images/placeholder/Mountains-highest-point-4.JPG"
+        },
+        {
+          "name": "Paxtle-trees-1 Paxtle-trees-1",
+          "path": "/images/placeholder/Paxtle-trees-1.JPG"
+        },
+        {
+          "name": "Paxtle-trees-7",
+          "path": "/images/placeholder/Paxtle-trees-7.JPG"
+        },
+        {
+          "name": "Mountains-highest-point3 Mountains-highest-point3",
+          "path": "/images/placeholder/Mountains-highest-point3.JPG"
+        },
+        {
+          "name": "Trabajo-grass-mound.JPG",
+          "path": "/images/placeholder/Trabajo-grass-mound.JPG"
+        }
       ]
     },
     {
       "id": 2,
       "name": "MSF REACH",
       "date": "2018-2019",
-      "description": "Blahblahblah is cea non eos ipsus, essimolupis am nimporum latquas cus rem restrum la andendissunt dolut qui accum, oficta pos vit, vero et esequidis essitati iduciet et labo. Nam fugia quosam quae oficie nderisi con eatium harum ipsus soloribus enient qui dolorit veresti dolupidit atibus, sit, omnim vitiam.",
+      "blurb": "The international NGO Médecins Sans Frontières established a digital emergency response unit in 2018. With MSF REACH [REaction Assessment Collaboration Hub](https://blogs.msf.org/bloggers/lucie/msf-reach-new-project-could-help-msf-act-faster-emergency) they introduced a platform that is used by across MSF operation centers in Europe to oversee rapidly evolving emergencies in Asia and support effective decision for dispatching medical resource. A particular focus of the initiative is to combine internal reporting from ground operators with crowd-sourced information, e.g. instant messaging, social networking and RSS feeds, in real-time. We supported MSF to improve their response times in emergency situations and to enhance all information processing activities across the MSF REACH platform.",
+      "details": {
+        "intro": "The first version of MSF REACH was spearheaded by [Across the Cloud Pty Ltd](https://acrossthecloud.net/) with an established cloud infrastructure, clear REST application protocol and server-side rendering of html pages.  It was backend driven development, which laid the foundations but as project scope widens and more features were added, the views got more complicated and the layouts more cramped. We were bought onto the project to consider the complexity of the dashboard logistics and implement the front end with particular focus on user experience. Our approach was guided by an initial understanding of prevailing structures of the existing REACH platform. The actual technical realisation was then realised in sync with adaptation of standardized design systems. \n\r\n\r The whole procedure can be divided into four major sequences that are mutually dependent. \n\r ### Our challenges: \n\r – global scale -> to address multiple timezones & language localization \n\r – mapping of real time feeds (satellite imagery but also social media) for monitoring \n\r – reporting hierarchies (notifications, crowd-sourced report cards, situation reports)",
+
+        "sections": [
+          {
+            "title": "1) User Research",
+            "description": "A first analysis conceptualised the inner logics of the organisation and operations within. From four user (a little be more about each needs, duration) interviews with different expertises of MSF staff, we’ve derived that most are first time users which feel slightly hesitant to interact with the system due to its complexity. Therefore our intuition was to understand their daily tasks and tools of which they are familiar with and how they would potentially use the platform and when necessary to try a walkthrough of the platform for a particular use case."
+          },
+          {
+            "title": "2) Information Architecture ",
+            "imageTag": "ui-ux-03",
+            "description": "We rethought the existing taxonomy of REACH, conceptually as well as formally, with respect to the the functional elements of the platform, such as events, notifications and a file-sharing system. The idea was to maintain an approachable navigation flow, i.e. a clear information architecture that is accessible and readable, by catering to four key principles.",
+            "subSections": [
+              {
+                "text": "Access – the ability to quickly find ongoing events within the platform but also to easily filter through previous data. [Split screen of list view with expanded detail along with a searchable navigation and status filtering]",
+                "imageTag": "event-page"
+              },
+              {
+                "text": "Read – the presentation of the required information is curated in particular views to present the data in manageable sections. To avoid further long email chain correspondances into delegated sections of topics. ",
+                "imageTag": "event-notifications"
+              },
+              {
+                "text": "Write – the ability to have relevant forms to input feedback about events dependent on the report status and context.  To aggregate and provide organization specific templates for various needs. ",
+                "imageTag": "event-creation"
+              },
+              {
+                "text": "Update – quick reporting or data dumping in real time",
+                "imageTag": "event-resource-edit-view"
+              }
+            ]
+          },
+          {
+            "title": "3) Visual Hierarchy",
+            "imageTag": "functional-components",
+            "description": "The visual interface design and the interaction patterns follow three core ideas to materialise the conceptual pillars of the structural design:",
+            "subSections": [
+              {
+                "text": "Provide – Each screen of the platform is designed with a paradigm of 'overview and orientation' in mind. At each stage the user is aware of her position, progress and possibilities within the interface. (1. Top navigation, three tiers of that is only reveal when the user traverse through, 2. Split view + map annotation)",
+                "imageTag": "ui-components"
+              },
+              {
+                "text": "Guide – Each interaction with the interface is guided by visual cues in order to guarantee a seamless experience and comprehensive understanding of information sharing across the platform. (1. iconography, jumping between the map and list view, 2. Bottom storyline navigation, task list when event status changes ) ",
+                "imageTag": "navigation-component"
+              },
+              {
+                "text": "Iterate – Building on the concept of similarity all interface elements share a visual familiarity and similar interaction modes to be reusable across the whole platform. (1. Display and highlight edit toggle, 2. UI components ?? ) ",
+                "imageTag": "multiple-screens"
+              }
+            ]
+          },
+          {
+            "title": "4) Front-End Development",
+            "description": "The technical implementation was realised by using progressive web frameworks. With the help of modular components and their composition it was possible to produce a resource-light web experience that is accessible across various devices and bandwidths.",
+            "subSections": []
+          }
+        ]
+      },
+      "accreditation": "Finally we would like to thank MSF for the trust and patient — particularly our product owner Lucie for her active engagement and openness to adopt to our iteration process. Also we would like to give recognition to Across the Cloud for the continuous support, and mentorship. ",
+
       "images": [
-        "mountains-back-view-4.JPG",
-        "Mountains-highest-point-4.JPG",
-        "Paxtle-trees-1.JPG",
-        "Paxtle-trees-7.JPG",
-        "Mountains-highest-point3.JPG"
+        {
+          "name": "ui-ux-03",
+          "path": "/images/projects/msf-reach/process/MSF_UIUX_Page_03.jpg"
+        },
+        {
+          "name": "functional-components",
+          "path": "/images/projects/msf-reach/process/MSF_UIUX_Page_07.jpg"
+        },
+        {
+          "name": "event-page",
+          "path": "/images/projects/msf-reach/design/MSF_Styleguide18.jpg"
+        },
+        {
+          "name": "event-notifications",
+          "path": "/images/projects/msf-reach/design/MSF_Styleguide22.jpg",
+          "caption": ""
+        },
+        {
+          "name": "event-creation",
+          "path": "/images/projects/msf-reach/design/MSF_Styleguide51.jpg"
+        },
+        {
+          "name": "event-sitrep",
+          "path": "/images/projects/msf-reach/design/MSF_Styleguide46.jpg"
+        },
+        {
+          "name": "event-resource-edit-view",
+          "path": "/images/projects/msf-reach/design/MSF_Styleguide42.jpg"
+        },
+        {
+          "name": "ui-components",
+          "path": "/images/projects/msf-reach/process/MSF_Styleguide5.jpg"
+        },
+
+        {
+          "name": "navigation-component",
+          "path": "/images/projects/msf-reach/process/MSF_Styleguide6.jpg"
+        },
+
+        {
+          "name": "multiple-screens",
+          "path": "/images/projects/msf-reach/process/MSF_Styleguide17.jpg"
+        }
       ]
     },
     {
       "id": 3,
       "name": "GCATG",
       "date": "2018",
-      "description": "Blahblahblah is cea non eos ipsus, essimolupis am nimporum latquas cus rem restrum la andendissunt dolut qui accum, oficta pos vit, vero et esequidis essitati iduciet et labo. Nam fugia quosam quae oficie nderisi con eatium harum ipsus soloribus enient qui dolorit veresti dolupidit atibus, sit, omnim vitiam.",
+      "blurb": "Blahblahblah is cea non eos ipsus, essimolupis am nimporum latquas cus rem restrum la andendissunt dolut qui accum, oficta pos vit, vero et esequidis essitati iduciet et labo. Nam fugia quosam quae oficie nderisi con eatium harum ipsus soloribus enient qui dolorit veresti dolupidit atibus, sit, omnim vitiam.",
+      "details": { "intro": "" },
       "images": [
-        "mountains-back-view-4.JPG",
-        "Mountains-highest-point-4.JPG",
-        "Paxtle-trees-1.JPG",
-        "Paxtle-trees-7.JPG",
-        "Mountains-highest-point3.JPG"
+        {
+          "name": "Mountains-highest-point-4",
+          "path": "/images/placeholder/Mountains-highest-point-4.JPG"
+        },
+        {
+          "name": "Paxtle-trees-1 Paxtle-trees-1",
+          "path": "/images/placeholder/Paxtle-trees-1.JPG"
+        },
+        {
+          "name": "Paxtle-trees-7",
+          "path": "/images/placeholder/Paxtle-trees-7.JPG"
+        },
+        {
+          "name": "Mountains-highest-point3 Mountains-highest-point3",
+          "path": "/images/placeholder/Mountains-highest-point3.JPG"
+        },
+        {
+          "name": "Trabajo-grass-mound.JPG",
+          "path": "/images/placeholder/Trabajo-grass-mound.JPG"
+        }
       ]
     },
     {
       "id": 4,
       "name": "Nice title ",
       "date": "2017",
-      "description": "Blahblahblah is cea non eos ipsus, essimolupis am nimporum latquas cus rem restrum la andendissunt dolut qui accum, oficta pos vit, vero et esequidis essitati iduciet et labo. Nam fugia quosam quae oficie nderisi con eatium harum ipsus soloribus enient qui dolorit veresti dolupidit atibus, sit, omnim vitiam.",
+      "blurb": "Blahblahblah is cea non eos ipsus, essimolupis am nimporum latquas cus rem restrum la andendissunt dolut qui accum, oficta pos vit, vero et esequidis essitati iduciet et labo. Nam fugia quosam quae oficie nderisi con eatium harum ipsus soloribus enient qui dolorit veresti dolupidit atibus, sit, omnim vitiam.",
+      "details": { "intro": "" },
       "images": [
-        "mountains-back-view-4.JPG",
-        "Mountains-highest-point-4.JPG",
-        "Paxtle-trees-1.JPG",
-        "Paxtle-trees-7.JPG",
-        "Mountains-highest-point3.JPG"
+        {
+          "name": "Mountains-highest-point-4",
+          "path": "/images/placeholder/Mountains-highest-point-4.JPG"
+        },
+        {
+          "name": "Paxtle-trees-1 Paxtle-trees-1",
+          "path": "/images/placeholder/Paxtle-trees-1.JPG"
+        },
+        {
+          "name": "Paxtle-trees-7",
+          "path": "/images/placeholder/Paxtle-trees-7.JPG"
+        },
+        {
+          "name": "Mountains-highest-point3 Mountains-highest-point3",
+          "path": "/images/placeholder/Mountains-highest-point3.JPG"
+        },
+        {
+          "name": "Trabajo-grass-mound.JPG",
+          "path": "/images/placeholder/Trabajo-grass-mound.JPG"
+        }
       ]
     },
     {
       "id": 5,
       "name": "adf asflwk asdlkfw e",
       "date": "2016",
-      "description": "Blahblahblah is cea non eos ipsus, essimolupis am nimporum latquas cus rem restrum la andendissunt dolut qui accum, oficta pos vit, vero et esequidis essitati iduciet et labo. Nam fugia quosam quae oficie nderisi con eatium harum ipsus soloribus enient qui dolorit veresti dolupidit atibus, sit, omnim vitiam.",
+      "blurb": "Blahblahblah is cea non eos ipsus, essimolupis am nimporum latquas cus rem restrum la andendissunt dolut qui accum, oficta pos vit, vero et esequidis essitati iduciet et labo. Nam fugia quosam quae oficie nderisi con eatium harum ipsus soloribus enient qui dolorit veresti dolupidit atibus, sit, omnim vitiam.",
+      "details": { "intro": "" },
       "images": [
-        "mountains-back-view-4.JPG",
-        "Mountains-highest-point-4.JPG",
-        "Paxtle-trees-1.JPG",
-        "Paxtle-trees-7.JPG",
-        "Mountains-highest-point3.JPG"
+        {
+          "name": "Mountains-highest-point-4",
+          "path": "/images/placeholder/Mountains-highest-point-4.JPG"
+        },
+        {
+          "name": "Paxtle-trees-1 Paxtle-trees-1",
+          "path": "/images/placeholder/Paxtle-trees-1.JPG"
+        },
+        {
+          "name": "Paxtle-trees-7",
+          "path": "/images/placeholder/Paxtle-trees-7.JPG"
+        },
+        {
+          "name": "Mountains-highest-point3 Mountains-highest-point3",
+          "path": "/images/placeholder/Mountains-highest-point3.JPG"
+        },
+        {
+          "name": "Trabajo-grass-mound.JPG",
+          "path": "/images/placeholder/Trabajo-grass-mound.JPG"
+        }
       ]
     }
   ]

@@ -1,5 +1,5 @@
-import React from "react";
-import { useTransition, animated } from "react-spring";
+import React from 'react';
+import { useTransition, animated } from 'react-spring';
 
 export default function AboutUs() {
   // const { footnotes } = useRouteData();
@@ -15,7 +15,7 @@ export default function AboutUs() {
         With the desire to support
         <span
           className="annotations"
-          onMouseEnter={() => console.log("show popover")}
+          onMouseEnter={() => console.log('show popover')}
         >
           1
         </span>

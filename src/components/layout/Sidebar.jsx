@@ -1,5 +1,5 @@
-import React from "react";
+import React from 'react';
 
 export default function SideBar({ side }) {
-  return <div className={side + " side-bar"}>HOLD</div>;
+  return <div className={side + ' side-bar'}>HOLD</div>;
 }

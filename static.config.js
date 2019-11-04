@@ -1,35 +1,27 @@
-import React from "react";
-import path from "path";
-import axios from "axios";
+import React from 'react';
+import path from 'path';
+import axios from 'axios';
 
 export default {
-  basePath: "/",
+  basePath: '/',
   getRoutes: async () => {
-    const { data: tags } = require("./public/doc/tags.json");
-    const { data: projects } = require("./public/doc/projects.json");
-    // const tagComponents = tags.map(tag => ({
-    //   path: `/#${tag.value}`,
-    //   template: "src/components/tags/TagResult",
-    //   getData: () => ({
-    //     // return relevant projects
-    //   })
-    // }));
+    const { data: tags } = require('./public/doc/tags.json');
+    const { data: projects } = require('./public/doc/projects.json');
 
-    const projectComponents = projects.map(project => ({
-      path: `/projects/${project.id}`,
-      template: "src/components/project/Project",
-      getData: () => ({
-        project
-      })
-    }));
     return [
       {
-        path: "/",
+        path: '/',
         getData: () => ({
           tags,
           projects
         }),
-        children: projectComponents
+        children: projects.map(project => ({
+          path: `/projects/${project.id}`,
+          template: 'src/components/project/Project',
+          getData: () => ({
+            project
+          })
+        }))
       }
     ];
   },
@@ -55,18 +47,18 @@ export default {
 
   plugins: [
     [
-      require.resolve("react-static-plugin-source-filesystem"),
+      require.resolve('react-static-plugin-source-filesystem'),
       {
-        location: path.resolve("./src/pages")
+        location: path.resolve('./src/pages')
       }
     ],
-    require.resolve("react-static-plugin-reach-router"),
+    require.resolve('react-static-plugin-reach-router'),
     [
-      require.resolve("react-static-plugin-sass"),
+      require.resolve('react-static-plugin-sass'),
       {
-        includePaths: ["./src/styles/"]
+        includePaths: ['./src/styles/']
       }
     ],
-    require.resolve("react-static-plugin-sitemap")
+    require.resolve('react-static-plugin-sitemap')
   ]
 };

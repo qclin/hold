@@ -1,10 +1,10 @@
-import React from "react";
-import { useRouteData } from "react-static";
+import React from 'react';
+import { useRouteData } from 'react-static';
 
-import { useSpring, animated, config } from "react-spring";
-import AboutUs from "../components/layout/AboutUs";
-import Contact from "../components/layout/Contact";
-import ProjectPreview from "../components/project/ProjectPreview";
+import { useSpring, animated, config } from 'react-spring';
+import AboutUs from '../components/layout/AboutUs';
+import Contact from '../components/layout/Contact';
+import ProjectPreview from '../components/project/ProjectPreview';
 
 export default () => {
   const { projects } = useRouteData();
