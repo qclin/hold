@@ -1,29 +1,20 @@
-import React from 'react';
-import { useRouteData } from 'react-static';
-import { Link } from 'components/Router';
-import marked from 'marked';
+import React from "react";
+import { useRouteData } from "react-static";
+import { Link } from "components/Router";
 
-function findImagePath(tag, images) {
-  const imageElement = images.find(element => element.name == tag);
-  return imageElement.path;
-}
+import { findImagePath } from "../utils/find-image-path";
 
 export default function Project() {
   const { project } = useRouteData();
   const { details, blurb, name, date, images } = project;
-  const markedIntro = marked(details.intro || blurb);
+
   return (
     <div className="project-page">
       <Link to="/"> back </Link>
       <br />
       <h3>{name}</h3>
       <p>{date}</p>
-      <div className="fl w-60 pa2 mr5 bt b--silver">
-        <p
-          className="measure-wide"
-          dangerouslySetInnerHTML={{ __html: markedIntro }}
-        />
-      </div>
+      <div className="fl w-60 pa2 mr5 bt b--silver"></div>
       <div className="bt b--silver">
         {details.sections &&
           details.sections.map(ea => (

@@ -16,14 +16,11 @@
 .about-wrapper {
   overflow: hidden;
 }
-#about-us {
-  width: 85%;
-}
+
 .tag-panel {
   vertical-align: top;
   height: 100vh;
   padding: 2em 0.5em;
-
   top: 0;
   a {
     display: block;
@@ -53,11 +50,11 @@
   height: 300px;
 
   .grow:hover {
-    z-index: 500;
+    z-index: 5;
   }
   .text-box {
     position: relative;
-    z-index: 300;
+    z-index: 3;
     &.even {
     }
     &.odd {
@@ -83,5 +80,63 @@
   position: absolute;
   &:hover {
     background: transparent;
+  }
+}
+
+nav {
+  background: #fff;
+  text-align: center;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+#about-us {
+  .content {
+    display: none;
+  }
+}
+#about-us.open {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+
+  .background {
+    display: block;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    position: fixed;
+  }
+  .content {
+    display: block;
+  }
+}
+
+#about-us.scroll {
+  height: 181px;
+  overflow: hidden;
+  .content {
+    display: block;
+    animation: floatText 15s infinite linear;
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+}
+
+.blur {
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+}
+
+@keyframes floatText {
+  to {
+    transform: translateY(-100%);
   }
 }

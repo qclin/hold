@@ -1,38 +1,34 @@
-import React from 'react';
-import { useRouteData } from 'react-static';
-
-import { useSpring, animated, config } from 'react-spring';
-import AboutUs from '../components/layout/AboutUs';
-import Contact from '../components/layout/Contact';
-import ProjectPreview from '../components/project/ProjectPreview';
+import React, { useState } from "react";
+import { useRouteData } from "react-static";
+import { useSpring, animated, config } from "react-spring";
+import { useScroll } from "../utils/use-scroll";
+import AboutUs from "../components/layout/AboutUs";
+import Contact from "../components/layout/Contact";
+import TagPanel from "../components/tags/TagPanel";
+import ProjectPreview from "../components/project/ProjectPreview";
 
 export default () => {
   const { projects } = useRouteData();
+  const scroll = useScroll();
 
-  const props = useSpring({
-    height: 200,
-    from: { height: 70 },
-    config: { mass: 50, tension: 10, friction: 25 }
-  });
-
-  function logScrollY() {}
-
+  const [expanded, setExpanded] = useState(false);
+  const showNav = scroll.y > 180 ? "show" : "hide";
   return (
-    <div className="fl w-75">
-      <animated.div
-        style={props}
-        className="about-wrapper"
-        onScroll={() => console.log(window.scrollY)}
-      >
-        <AboutUs />
-      </animated.div>
-      <div className="home-body">
-        <div id="project-section">
-          {projects.map((project, index) => (
-            <ProjectPreview model={project} key={project.id} index={index} />
-          ))}
+    <div>
+      <TagPanel className={expanded ? "blur" : ""} />
+      <div className="fl w-75">
+        <AboutUs type={expanded ? "open" : "scroll"} />
+        <nav onClick={() => setExpanded(!expanded)} className={showNav}>
+          <span>ABOUT</span>
+        </nav>
+        <div className={expanded ? "blur home-body" : "home-body"}>
+          <div id="project-section">
+            {projects.map((project, index) => (
+              <ProjectPreview model={project} key={project.id} index={index} />
+            ))}
+          </div>
+          <Contact />
         </div>
-        <Contact />
       </div>
     </div>
   );

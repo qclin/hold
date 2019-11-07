@@ -1,11 +1,11 @@
-import React from 'react';
-import { useRouteData } from 'react-static';
-import { Link } from 'components/Router';
+import React from "react";
+import { Link } from "components/Router";
 
 export default function ProjectPreview({ model, index }) {
   // TODO: update this later
   const tmpImage = model.images[index];
-  const nthOf = index % 2 == 0 ? 'even' : 'odd';
+  const nthOf = index % 2 == 0 ? "even" : "odd";
+
   return (
     <div className="project-preview items-top">
       <Link

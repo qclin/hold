@@ -1,23 +1,22 @@
-import React from 'react';
-import path from 'path';
-import axios from 'axios';
+import React from "react";
+import path from "path";
 
 export default {
-  basePath: '/',
+  basePath: "/",
   getRoutes: async () => {
-    const { data: tags } = require('./public/doc/tags.json');
-    const { data: projects } = require('./public/doc/projects.json');
+    const { data: tags } = require("./public/doc/tags.json");
+    const { data: projects } = require("./public/doc/projects.json");
 
     return [
       {
-        path: '/',
+        path: "/",
         getData: () => ({
           tags,
           projects
         }),
         children: projects.map(project => ({
           path: `/projects/${project.id}`,
-          template: 'src/components/project/Project',
+          template: "src/containers/Project",
           getData: () => ({
             project
           })
@@ -47,18 +46,18 @@ export default {
 
   plugins: [
     [
-      require.resolve('react-static-plugin-source-filesystem'),
+      require.resolve("react-static-plugin-source-filesystem"),
       {
-        location: path.resolve('./src/pages')
+        location: path.resolve("./src/pages")
       }
     ],
-    require.resolve('react-static-plugin-reach-router'),
+    require.resolve("react-static-plugin-reach-router"),
     [
-      require.resolve('react-static-plugin-sass'),
+      require.resolve("react-static-plugin-sass"),
       {
-        includePaths: ['./src/styles/']
+        includePaths: ["src/styles/"]
       }
     ],
-    require.resolve('react-static-plugin-sitemap')
+    require.resolve("react-static-plugin-sitemap")
   ]
 };
