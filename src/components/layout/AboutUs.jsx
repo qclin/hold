@@ -1,13 +1,12 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 export default function AboutUs(props) {
   const { type } = props;
 
   return (
-    <div id="about-us" className={props.type}>
-      <div className="content">
-        <div className="background"></div>
-        <div className="measure-wide bg-white">
+    <div id="about" className={props.type}>
+      <div className="content bg-white">
+        <div className="measure-wide ">
           <p>
             Hold designs creative support systems for political and social
             practices for durable collectivities
@@ -16,7 +15,7 @@ export default function AboutUs(props) {
             With the desire to support
             <span
               className="annotations"
-              onMouseEnter={() => console.log("show popover")}
+              onMouseEnter={() => console.log('show popover')}
             >
               1
             </span>

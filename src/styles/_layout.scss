@@ -92,37 +92,41 @@ nav {
   left: 0;
   cursor: pointer;
 }
-
-#about-us {
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+#about {
   .content {
     display: none;
   }
 }
-#about-us.open {
+#about {
+  &.open,
+  &.scroll {
+    .content {
+      padding: 30px;
+      display: block;
+    }
+  }
+}
+#about.open {
+  width: 100%;
   position: fixed;
   z-index: 10;
-  width: 100%;
-
-  .background {
-    display: block;
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
-    height: 100%;
-    width: 100%;
-    left: 0;
-    right: 0;
-    position: fixed;
-  }
   .content {
-    display: block;
+    overflow-y: scroll;
+    width: max-content;
+    max-height: 95vh;
   }
 }
 
-#about-us.scroll {
+#about.scroll {
   height: 181px;
   overflow: hidden;
   .content {
-    display: block;
     animation: floatText 15s infinite linear;
     &:hover {
       animation-play-state: paused;

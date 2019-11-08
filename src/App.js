@@ -1,22 +1,17 @@
-import React, { Suspense } from "react";
-import { Root, Routes, addPrefetchExcludes } from "react-static";
+import React, { Suspense } from 'react';
+import { Root, Routes, addPrefetchExcludes } from 'react-static';
 
-import { Link, Router } from "components/Router";
-import Dynamic from "containers/Dynamic";
-import Sidebar from "components/layout/Sidebar";
+import { Link, Router } from 'components/Router';
+import Dynamic from 'containers/Dynamic';
+import Sidebar from 'components/layout/Sidebar';
 
-import "./app.css";
+import './app.css';
 
-addPrefetchExcludes(["dynamic"]);
+addPrefetchExcludes(['dynamic']);
 
 function App() {
   return (
     <Root>
-      <nav>
-        <Link to="/"></Link>
-        Contact
-      </nav>
-
       <div className="content">
         <Sidebar side="left" />
         <Sidebar side="right" />
