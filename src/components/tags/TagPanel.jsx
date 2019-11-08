@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRouteData } from 'react-static';
 
-export default function TagPanel() {
+export default function TagPanel(props) {
   const { tags } = useRouteData();
 
   return (

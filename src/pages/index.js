@@ -11,27 +11,35 @@ export default () => {
   const { projects } = useRouteData();
   const scroll = useScroll();
 
-  const [expanded, setExpanded] = useState(false);
-  const showNav = scroll.y > 180 ? 'show' : 'hide';
+  const [aboutOn, setAboutOn] = useState(false);
+  const [contactOn, setContactOn] = useState(false);
+  const showNav = scroll.y > 150 ? 'show' : 'hide';
   const showContact = scroll.reachedBottom ? 'show' : 'hide';
-  console.log(showContact);
+  const blurContext = aboutOn || contactOn;
   return (
     <div>
-      <TagPanel className={expanded ? 'blur' : ''} />
+      <div className={blurContext ? 'blur' : ''}>
+        <TagPanel />
+      </div>
       <div className="fl w-75">
-        <AboutUs type={expanded ? 'open' : 'scroll'} />
-        <nav onClick={() => setExpanded(!expanded)} className={showNav}>
+        <AboutUs type={aboutOn ? 'open' : 'scroll'} />
+        <nav onClick={() => setAboutOn(!aboutOn)} className={showNav}>
           <span>ABOUT</span>
         </nav>
-        <div className={expanded ? 'blur home-body' : 'home-body'}>
+        <div className={blurContext ? 'blur home-body' : 'home-body'}>
           <div id="project-section">
             {projects.map((project, index) => (
               <ProjectPreview model={project} key={project.id} index={index} />
             ))}
           </div>
         </div>
-        <span className={showContact}> CONTACT</span>
-        <Contact />
+        <footer
+          onClick={() => setContactOn(!contactOn)}
+          className={showContact}
+        >
+          <span>CONTACT</span>
+        </footer>
+        {contactOn && <Contact />}
       </div>
     </div>
   );

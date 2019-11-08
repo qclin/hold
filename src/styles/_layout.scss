@@ -4,8 +4,8 @@
   top: 0;
   writing-mode: vertical-rl;
   text-orientation: upright;
-  letter-spacing: 28vh;
-  padding: 2em 0;
+  letter-spacing: 26vh;
+  padding: 4em 0;
   &.left {
     left: 0;
   }
@@ -83,64 +83,9 @@
   }
 }
 
-nav {
-  background: #fff;
-  text-align: center;
-  z-index: 10;
-  position: fixed;
-  top: 0;
-  left: 0;
-  cursor: pointer;
-}
 .hide {
   display: none;
 }
 .show {
   display: block;
-}
-#about {
-  .content {
-    display: none;
-  }
-}
-#about {
-  &.open,
-  &.scroll {
-    .content {
-      padding: 30px;
-      display: block;
-    }
-  }
-}
-#about.open {
-  width: 100%;
-  position: fixed;
-  z-index: 10;
-  .content {
-    overflow-y: scroll;
-    width: max-content;
-    max-height: 95vh;
-  }
-}
-
-#about.scroll {
-  height: 181px;
-  overflow: hidden;
-  .content {
-    animation: floatText 15s infinite linear;
-    &:hover {
-      animation-play-state: paused;
-    }
-  }
-}
-
-.blur {
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-}
-
-@keyframes floatText {
-  to {
-    transform: translateY(-100%);
-  }
 }

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import debounce from 'lodash/debounce';
 
 export const useScroll = () => {
   // Set a single object `{ x: ..., y: ..., direction: ... }` once on init
@@ -13,7 +14,6 @@ export const useScroll = () => {
     // `prev` provides us the previous state: https://reactjs.org/docs/hooks-reference.html#functional-updates
     const bound = document.body.getBoundingClientRect();
     const html = document.documentElement;
-    console.log(bound.top, html.offsetHeight, html.clientHeight);
     setScroll(prev => ({
       x: bound.left,
       y: -bound.top,
@@ -23,8 +23,10 @@ export const useScroll = () => {
     }));
   };
 
+  const delay = 20;
+
   useEffect(() => {
-    window.addEventListener('scroll', listener);
+    window.addEventListener('scroll', debounce(listener, delay));
     // cleanup function occurs on unmount
     return () => window.removeEventListener('scroll', listener);
     // Run `useEffect` only once on mount, so add `, []` after the closing curly brace }
