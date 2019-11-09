@@ -1,12 +1,61 @@
 {
   "data": [
     {
+      "id": 0,
+      "name": "Alianza Pino-Encino",
+      "date": "2020",
+      "blurb": "Alianza Pino-Encino is a regional multi-institutional and multi-sector group of organizations with communitarian objectives to vitalize local communities part of the Pine and Oak forests of Mesoamerica. They promote conservation and sustainable management by integrating local efforts, political organizing and funding. As a grassroots alliance, they are in need of greater visibility on the array of projects they have initiated since 2008 in promoting sustainable forestry, conservation of migratory birds, technical training, and educational workshops on the sociopolitical effects of conservation in rural communities. Through open dialogue and research, we will design an updated identity, website and an ongoing mapping scheme that imagines through the question of forest representation and their role in ecological and social life of the region.",
+      "tags": [
+        "Advocacy",
+        "Human-environment relations",
+        "Land management",
+        "Sustainability",
+        "Research",
+        "Resilience",
+        "Visibility",
+        "Website"
+      ],
+      "details": { "intro": "" },
+      "images": [
+        {
+          "name": "Mountains-highest-point-4",
+          "path": "/images/placeholder/Mountains-highest-point-4.JPG"
+        },
+        {
+          "name": "Paxtle-trees-1 Paxtle-trees-1",
+          "path": "/images/placeholder/Paxtle-trees-1.JPG"
+        },
+        {
+          "name": "Paxtle-trees-7",
+          "path": "/images/placeholder/Paxtle-trees-7.JPG"
+        },
+        {
+          "name": "Mountains-highest-point3 Mountains-highest-point3",
+          "path": "/images/placeholder/Mountains-highest-point3.JPG"
+        },
+        {
+          "name": "Trabajo-grass-mound.JPG",
+          "path": "/images/placeholder/Trabajo-grass-mound.JPG"
+        }
+      ]
+    },
+    {
       "id": 1,
       "name": "Ocean Archive",
       "date": "2018-2019",
-      "blurb": "Blahblahblah is cea non eos ipsus, essimolupis am nimporum latquas cus rem restrum la andendissunt dolut qui accum, oficta pos vit, vero et esequidis essitati iduciet et labo. Nam fugia quosam quae oficie nderisi con eatium harum ipsus soloribus enient qui dolorit veresti dolupidit atibus, sit, omnim vitiam. ",
+      "blurb": "The Ocean Archive is an on-going ‘living’ archive with the aim to promote research, discoverability and collaborative multidisciplinary dialogue over the current state of the ocean. Initiated by TBA21-Academy, they have commissioned projects lead by artists, scientists and theorists to expand ocean understanding through the lens of art and science. We researched and prototyped a fluid archival infrastructure with the aim to create a web experience that generates plurality of perspectives - from datasets of a marine biologist to a filmmaker studying deep sea mining. ",
+      "tags": [
+        "archive",
+        "environmental advocacy",
+        "epistemology",
+        "cultural production",
+        "human-environment relations",
+        "knowledge infrastructure",
+        "research",
+        "prototype"
+      ],
       "details": {
-        "intro": " Blahblahblah is cea non eos ipsus, essimolupis am nimporum latquas cus rem restrum la andendissunt dolut qui accum, oficta pos vit, vero et esequidis essitati iduciet et labo. Nam fugia quosam quae oficie nderisi con eatium harum ipsus soloribus enient qui dolorit veresti dolupidit atibus, sit, omnim vitiam. \r\n Blahblahblah is cea non eos ipsus, essimolupis am nimporum latquas cus rem restrum la andendissunt dolut qui accum, oficta pos vit, vero et esequidis essitati iduciet et labo. Nam fugia quosam quae oficie nderisi con eatium harum ipsus soloribus enient qui dolorit veresti dolupidit atibus, sit, omnim vitiam. \r\n  Blahblahblah is cea non eos ipsus, essimolupis am nimporum latquas cus rem restrum la andendissunt dolut qui accum, oficta pos vit, vero et esequidis essitati iduciet et labo. Nam fugia quosam quae oficie nderisi con eatium harum ipsus soloribus enient qui dolorit veresti dolupidit atibus, sit, omnim vitiam. \r\n  Blahblahblah is cea non eos ipsus, essimolupis am nimporum latquas cus rem restrum la andendissunt dolut qui accum, oficta pos vit, vero et esequidis essitati iduciet et labo. Nam fugia quosam quae oficie nderisi con eatium harum ipsus soloribus enient qui dolorit veresti dolupidit atibus, sit, omnim vitiam."
+        "intro": " The Ocean Archive is an on-going ‘living’ archive with the aim to promote research, discoverability and collaborative multidisciplinary dialogue over the current state of the ocean. Initiated by TBA21-Academy, they have commissioned projects lead by artists, scientists and theorists to expand ocean understanding through the lens of art and science. We researched and prototyped a fluid archival infrastructure with the aim to create a web experience that generates plurality of perspectives - from datasets of a marine biologist to a filmmaker studying deep sea mining. "
       },
       "images": [
         {
@@ -141,11 +190,13 @@
         }
       ]
     },
+
     {
       "id": 3,
       "name": "GCATG",
-      "date": "2018",
-      "blurb": "Blahblahblah is cea non eos ipsus, essimolupis am nimporum latquas cus rem restrum la andendissunt dolut qui accum, oficta pos vit, vero et esequidis essitati iduciet et labo. Nam fugia quosam quae oficie nderisi con eatium harum ipsus soloribus enient qui dolorit veresti dolupidit atibus, sit, omnim vitiam.",
+      "date": "2017",
+      "blurb": "Launched in parallel with e-flux’s Your Flight is Cancelled window display at NICC Brussels, the website tells a tale of the end of a fictional art travel agency sparked by political turmoil pertaining to the systematic breakage of borders. In this world exists the dissolution of the European Union, the unilateral suspension of visa and banking agreements by the United States, and instituting of military dictatorships throughout Latin American among other events. Initiated with a bankruptcy notice and closure of all art festivals, the aesthetic logic is modelled after a vacation booking site mixed in with idea of deterioration: random bits of scattered information organized loosely next to suspicious links and broken images.",
+      "tags": ["Cultural production", "Website"],
       "details": { "intro": "" },
       "images": [
         {
@@ -172,38 +223,9 @@
     },
     {
       "id": 4,
-      "name": "Nice title ",
-      "date": "2017",
-      "blurb": "Blahblahblah is cea non eos ipsus, essimolupis am nimporum latquas cus rem restrum la andendissunt dolut qui accum, oficta pos vit, vero et esequidis essitati iduciet et labo. Nam fugia quosam quae oficie nderisi con eatium harum ipsus soloribus enient qui dolorit veresti dolupidit atibus, sit, omnim vitiam.",
-      "details": { "intro": "" },
-      "images": [
-        {
-          "name": "Mountains-highest-point-4",
-          "path": "/images/placeholder/Mountains-highest-point-4.JPG"
-        },
-        {
-          "name": "Paxtle-trees-1 Paxtle-trees-1",
-          "path": "/images/placeholder/Paxtle-trees-1.JPG"
-        },
-        {
-          "name": "Paxtle-trees-7",
-          "path": "/images/placeholder/Paxtle-trees-7.JPG"
-        },
-        {
-          "name": "Mountains-highest-point3 Mountains-highest-point3",
-          "path": "/images/placeholder/Mountains-highest-point3.JPG"
-        },
-        {
-          "name": "Trabajo-grass-mound.JPG",
-          "path": "/images/placeholder/Trabajo-grass-mound.JPG"
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "name": "adf asflwk asdlkfw e",
-      "date": "2016",
-      "blurb": "Blahblahblah is cea non eos ipsus, essimolupis am nimporum latquas cus rem restrum la andendissunt dolut qui accum, oficta pos vit, vero et esequidis essitati iduciet et labo. Nam fugia quosam quae oficie nderisi con eatium harum ipsus soloribus enient qui dolorit veresti dolupidit atibus, sit, omnim vitiam.",
+      "name": "Anne Duk Hee Jordan",
+      "date": "2019",
+      "blurb": "Anne Duk Hee Jordan opens up doors to an artistic universe where she, humorously creates romantic machines that mirror, extend or convert biological processes and chemical reactions between living organisms and dead material. In her work she explores the flow of energies, human constructs of time and memory, decay, death, her own identity and encounters between mankind and his environment. We will design an updated web experience of her work of the last 10 years.",
       "details": { "intro": "" },
       "images": [
         {
