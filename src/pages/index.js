@@ -13,19 +13,23 @@ export default () => {
 
   const [aboutOn, setAboutOn] = useState(false);
   const [contactOn, setContactOn] = useState(false);
+  const [tagFilter, setTagFilter] = useState('');
+
   const showNav = scroll.y > 150 ? 'show' : 'hide';
   const showContact = scroll.reachedBottom ? 'show' : 'hide';
   const blurContext = aboutOn || contactOn;
   return (
     <div>
       <div className={blurContext ? 'blur' : ''}>
-        <TagPanel />
+        <TagPanel handleTagSelection={setTagFilter} />
       </div>
       <div className="fl w-75">
         <AboutUs type={aboutOn ? 'open' : 'scroll'} />
         <nav onClick={() => setAboutOn(!aboutOn)} className={showNav}>
           <span>ABOUT</span>
         </nav>
+
+        {tagFilter}
         <div className={blurContext ? 'blur home-body' : 'home-body'}>
           <div id="project-section">
             {projects.map((project, index) => (

@@ -47,45 +47,30 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 300px;
-
-  .grow:hover {
-    z-index: 5;
-  }
+  .image-wrapper,
   .text-box {
     position: relative;
+    &:hover {
+      z-index: 5;
+    }
+  }
+
+  .text-box {
     z-index: 3;
-    &.even {
+    height: 427px;
+    overflow: hidden;
+    p {
+      padding: 20px 0;
+      text-overflow: ellipsis;
+      display: inline-block;
     }
     &.odd {
       left: 60px;
     }
   }
-
-  .image-wrapper {
-    float: right;
-  }
-
-  .time-stamp {
-    color: $txt-gray-light;
-  }
-}
-.image-wrapper {
-}
-.teal-overlay {
-  background-color: #488c82;
-  mix-blend-mode: difference;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  &:hover {
-    background: transparent;
-  }
 }
 
-.hide {
-  display: none;
-}
-.show {
-  display: block;
+#project-section {
+  margin-top: 10em;
+  padding-bottom: 20em;
 }

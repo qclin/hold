@@ -3,18 +3,17 @@ import { useRouteData } from 'react-static';
 
 export default function TagPanel(props) {
   const { tags } = useRouteData();
-
+  const { handleTagSelection } = props;
   return (
     <div className="tag-panel fl w-20">
-      {tags.map(tag => (
-        <a
-          key={tag.id}
-          className="tag-item"
-          href={'#' + tag.value}
-          onClick={() => console.log(tag.value)}
+      {tags.map((tag, index) => (
+        <div
+          key={index}
+          className="tag-item grab"
+          onClick={() => handleTagSelection(tag)}
         >
-          {tag.label}
-        </a>
+          {tag}
+        </div>
       ))}
     </div>
   );

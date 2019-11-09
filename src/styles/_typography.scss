@@ -11,6 +11,52 @@ h6 {
   font-family: 'AtlasGrotesk-Regular', sans-serif;
 }
 
+.LargeBody_Atlas {
+  // headers, titles
+  font-family: AtlasGrotesk;
+  font-size: 25px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: 0.04px;
+  color: #1f1f1f;
+}
+
+.Body_Atlas {
+  // project text
+  font-family: Swiss721BT-Roman;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.03px;
+  color: #1f1f1f;
+}
+
+.H1Bold {
+  font-family: AtlasGrotesk;
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.07px;
+  color: var(--brownish-grey);
+}
+
+.Atlas_Mono {
+  font-family: 'AtlasTypewriter-Light';
+  font-size: 15px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: -0.5px;
+  color: #1f1f1f;
+}
+
 #about {
   font-family: 'AtlasGrotesk-Regular', sans-serif;
   font-size: 25px;
@@ -36,7 +82,12 @@ h6 {
   line-height: 2;
   letter-spacing: -0.5px;
 }
-
+nav,
+footer {
+  span {
+    font-family: 'AtlasGrotesk-Bold', sans-serif;
+  }
+}
 .project-preview,
 .project-page {
   h3 {

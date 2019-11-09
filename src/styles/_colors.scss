@@ -5,6 +5,12 @@ $highlight-teal: #00c1aa;
 $bg-white: #ffffff;
 $bg-zerox-gray: #b3a4a8;
 
+$off-white: #fffde8;
+$dark-navy-blue: #000217;
+$turquoise: #01c2ab;
+$sea: #399882;
+$brownish-grey: #737373;
+
 .home-body {
   background-image: linear-gradient(
     to right,
@@ -14,16 +20,36 @@ $bg-zerox-gray: #b3a4a8;
   );
 }
 
-#project-section {
-  margin-top: 10em;
-  padding-bottom: 20em;
+#contact {
+  color: $txt-gray;
+  padding: 3em;
+}
+
+#about.scroll .content,
+nav,
+footer {
+  &:hover {
+    background: $off-white;
+  }
+}
+
+.teal-overlay {
+  mix-blend-mode: difference;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: transparent;
+  &:hover {
+    background-color: #488c82;
+  }
 }
 
 .text-box {
   background: $bg-white;
 }
-
-#contact {
+.project-preview {
   color: $txt-gray;
-  padding: 3em;
+  .time-stamp {
+    color: $txt-gray-light;
+  }
 }
