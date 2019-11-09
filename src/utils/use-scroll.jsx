@@ -4,16 +4,17 @@ import debounce from 'lodash/debounce';
 export const useScroll = () => {
   // Set a single object `{ x: ..., y: ..., direction: ... }` once on init
   const [scroll, setScroll] = useState({
-    x: document.body.getBoundingClientRect().left,
-    y: document.body.getBoundingClientRect().top,
+    x: 0,
+    y: 0,
     direction: '',
     reachedBottom: false
   });
 
   const listener = e => {
+    debugger;
     // `prev` provides us the previous state: https://reactjs.org/docs/hooks-reference.html#functional-updates
-    const bound = document.body.getBoundingClientRect();
-    const html = document.documentElement;
+    const bound = e.target.body.getBoundingClientRect();
+    const html = e.target.documentElement;
     setScroll(prev => ({
       x: bound.left,
       y: -bound.top,
