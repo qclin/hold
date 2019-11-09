@@ -11,7 +11,6 @@ export const useScroll = () => {
   });
 
   const listener = e => {
-    debugger;
     // `prev` provides us the previous state: https://reactjs.org/docs/hooks-reference.html#functional-updates
     const bound = e.target.body.getBoundingClientRect();
     const html = e.target.documentElement;
