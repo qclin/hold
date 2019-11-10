@@ -11,7 +11,7 @@ export default function AboutUs(props) {
       >
         <span>ABOUT</span>
       </nav>
-      <div id="about" className={props.type}>
+      <div id="about" className={type}>
         <div className="content bg-white">
           <div className="measure-wide">
             <p>
@@ -54,9 +54,11 @@ export default function AboutUs(props) {
               interfaces and digital strategies.
             </p>
           </div>
-          <div className="close" onClick={() => handleAboutToggle(false)}>
-            CLOSE
-          </div>
+          {type != 'scroll' && (
+            <div className="close" onClick={() => handleAboutToggle(false)}>
+              CLOSE
+            </div>
+          )}
         </div>
       </div>
     </>
