@@ -73,6 +73,17 @@
       "name": "MSF REACH",
       "date": "2018-2019",
       "blurb": "The international NGO Médecins Sans Frontières established a digital emergency response unit in 2018. With MSF REACH [REaction Assessment Collaboration Hub](https://blogs.msf.org/bloggers/lucie/msf-reach-new-project-could-help-msf-act-faster-emergency) they introduced a platform that is used by across MSF operation centers in Europe to oversee rapidly evolving emergencies in Asia and support effective decision for dispatching medical resource. A particular focus of the initiative is to combine internal reporting from ground operators with crowd-sourced information, e.g. instant messaging, social networking and RSS feeds, in real-time. We supported MSF to improve their response times in emergency situations and to enhance all information processing activities across the MSF REACH platform.",
+      "tags": [
+        "Emergency response",
+        "Global health",
+        "Logistics",
+        "Mapping",
+        "Monitoring & assessment ",
+        "NGO",
+        "Platform",
+        "Prototype",
+        "Realtime reporting"
+      ],
       "details": {
         "intro": "The first version of MSF REACH was spearheaded by [Across the Cloud Pty Ltd](https://acrossthecloud.net/) with an established cloud infrastructure, clear REST application protocol and server-side rendering of html pages.  It was backend driven development, which laid the foundations but as project scope widens and more features were added, the views got more complicated and the layouts more cramped. We were bought onto the project to consider the complexity of the dashboard logistics and implement the front end with particular focus on user experience. Our approach was guided by an initial understanding of prevailing structures of the existing REACH platform. The actual technical realisation was then realised in sync with adaptation of standardized design systems. \n\r\n\r The whole procedure can be divided into four major sequences that are mutually dependent. \n\r ### Our challenges: \n\r – global scale -> to address multiple timezones & language localization \n\r – mapping of real time feeds (satellite imagery but also social media) for monitoring \n\r – reporting hierarchies (notifications, crowd-sourced report cards, situation reports)",
 
@@ -202,6 +213,7 @@
       "name": "Anne Duk Hee Jordan",
       "date": "2019",
       "blurb": "Anne Duk Hee Jordan opens up doors to an artistic universe where she, humorously creates romantic machines that mirror, extend or convert biological processes and chemical reactions between living organisms and dead material. In her work she explores the flow of energies, human constructs of time and memory, decay, death, her own identity and encounters between mankind and his environment. We will design an updated web experience of her work of the last 10 years.",
+      "tags": ["Cultural production", "Ecology", "Sustainability", "Website"],
       "details": { "intro": "" },
       "images": [
         {
