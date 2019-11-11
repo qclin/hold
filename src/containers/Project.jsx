@@ -38,8 +38,8 @@ export default function Project() {
       </div>
       {!details.sections && (
         <div className="fl w-40 pa2">
-          {images.map(ea => (
-            <img src={ea.path} alt={ea.name} />
+          {images.map((ea, i) => (
+            <img src={ea.path} alt={ea.name} key={i}/>
           ))}
         </div>
       )}

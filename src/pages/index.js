@@ -36,7 +36,7 @@ export default () => {
       {blurContext && <div className="w-100 h-100 fixed">block</div>}
       <div className="fl w-75">
         {tagOn ? (
-          <span class="close" onClick={() => setTagFilter('')}>
+          <span className="close" onClick={() => setTagFilter('')}>
             clear
           </span>
         ) : (

@@ -10,7 +10,7 @@ export default function TagPanel(props) {
       {tags.map((tag, index) => {
         if (tagOn && !relatedTags.includes(tag)) {
           return (
-            <div key={index} className="blur tag-item grab">
+            <div key={index} className="blur tag-item pointer">
               {tag}
             </div>
           );
@@ -18,11 +18,11 @@ export default function TagPanel(props) {
           return (
             <div
               key={index}
-              className="tag-item grab"
+              className="tag-item pointer"
               onClick={() => handleTagSelection(tag)}
             >
               <span className={tagFilter == tag ? 'bg-off-white' : ''}>
-                {tag}
+                {tag.toLowerCase()}
               </span>
             </div>
           );

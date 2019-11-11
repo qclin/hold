@@ -1,0 +1,19 @@
+.superscript {
+  position: relative;
+  top: -12px;
+  padding: 3px;
+  color: $highlight-teal;
+  border: $highlight-teal 1px solid;
+  margin: 0 0.2rem 0 0.1rem;
+  cursor: pointer;
+}
+
+.annotations {
+  pointer-events: auto !important;
+  width: 340px;
+  cursor: crosshair;
+  &:hover {
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+}

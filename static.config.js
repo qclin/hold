@@ -6,13 +6,15 @@ export default {
   getRoutes: async () => {
     const { data: tags } = require('./public/doc/tagsSimple.json');
     const { data: projects } = require('./public/doc/projects.json');
+    const { data: footnotes } = require('./public/doc/footnotes.json');
 
     return [
       {
         path: '/',
         getData: () => ({
           tags,
-          projects
+          projects,
+          footnotes
         }),
         children: projects.map(project => ({
           path: `/projects/${project.id}`,

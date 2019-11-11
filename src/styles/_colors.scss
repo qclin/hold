@@ -29,10 +29,14 @@ $brownish-grey: #737373;
 nav,
 footer {
   &:hover {
+    cursor: pointer;
     background: $off-white;
   }
 }
 
+.keep-reading {
+  color: $off-white;
+}
 .bg-off-white {
   background: $off-white;
 }
@@ -51,6 +55,7 @@ footer {
 .text-box {
   background: $bg-white;
 }
+
 .project-preview {
   color: $txt-gray;
   .time-stamp {

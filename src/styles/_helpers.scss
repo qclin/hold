@@ -8,3 +8,27 @@
 .measure-wide {
   max-width: 43em;
 }
+
+.teal-overlay:hover{
+  cursor: crosshair;
+}
+
+.__react_component_tooltip{
+  border-radius: 0;
+  &:before, &:after{
+    display: none;
+  }
+}
+
+
+.project-preview{
+  .__react_component_tooltip{
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $off-white !important;
+    background: none !important;
+    border-bottom: 1px solid red;
+    font-style: italic;
+  }
+}

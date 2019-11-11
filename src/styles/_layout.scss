@@ -34,14 +34,6 @@
   }
 }
 
-.annotations {
-  position: relative;
-  top: -9px;
-  padding: 3px;
-  color: $highlight-teal;
-  border: $highlight-teal 1px solid;
-}
-
 .project-preview {
   color: $txt-gray;
   display: -webkit-flex;
@@ -79,4 +71,8 @@
   width: 100%;
   text-align: center;
   cursor: grabbing;
+}
+
+.pointer {
+  cursor: pointer;
 }

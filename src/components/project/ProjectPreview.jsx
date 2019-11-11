@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'components/Router';
+import ReactTooltip from 'react-tooltip';
 
 export default function ProjectPreview({ model, index }) {
   // TODO: update this later
@@ -17,8 +18,9 @@ export default function ProjectPreview({ model, index }) {
         <p className="measure bt b--silver">{model.blurb}</p>
       </Link>
       <div className="w-60 image-wrapper fr">
-        <div className="teal-overlay"></div>
-        <img src={tmpImage.path} alt={tmpImage.name} />
+        <div className="teal-overlay" data-tip={tmpImage.name} data-for={`imagePreview${model.id}`}></div>
+        <ReactTooltip place="right" type="light" effect="float" id={`imagePreview${model.id}`}> {tmpImage.name}</ReactTooltip>
+        <img src={tmpImage.path} alt={tmpImage.name}/>
       </div>
     </div>
   );
