@@ -70,18 +70,18 @@ footer {
       animation-play-state: paused;
     }
   }
+}
 
-  .overlay{
-    text-transform: uppercase;
-    text-align: center;
-    vertical-align: center;
-    padding-top: 7%;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-    position: absolute;
-    cursor: pointer;
-  }
+.overlay {
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: center;
+  padding-top: 7%;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  position: absolute;
+  cursor: pointer;
 }
 
 .blur {
@@ -90,7 +90,7 @@ footer {
 }
 
 @keyframes floatText {
-  from{
+  from {
     transform: translateY(20%);
   }
   to {

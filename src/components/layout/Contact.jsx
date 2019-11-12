@@ -14,7 +14,7 @@ export default function Contact(props) {
       <div id="contact" className={contactOn ? 'show' : 'hide'}>
         <div className="content bg-white">
           Get in touch <br />
-          hello [at] studiohold.com <br />
+          hello [at] theholding.page <br />
           for collaborations, commissions or just to say hi …etc. <br />
           <a href="https://tinyletter.com/StudioHold" target="_blank">
             Newsletter

@@ -33,7 +33,9 @@
     }
   }
 }
-
+.project-section {
+  margin-top: 8rem;
+}
 .project-preview {
   color: $txt-gray;
   display: -webkit-flex;
@@ -51,10 +53,13 @@
     z-index: 3;
     height: 427px;
     overflow: hidden;
+    top: -88px;
     p {
       padding: 20px 0;
       text-overflow: ellipsis;
       display: inline-block;
+      overflow: hidden;
+      height: 80%;
     }
     &.odd {
       left: 60px;
@@ -75,4 +80,15 @@
 
 .pointer {
   cursor: pointer;
+}
+
+nav,
+footer {
+  span {
+    margin: 12px;
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
 }

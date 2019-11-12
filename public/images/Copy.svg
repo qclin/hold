@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrow / Yellow Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Arrow-/-Yellow-Copy" fill-rule="nonzero">
+            <rect id="Rectangle" fill="#FFFDE8" x="0" y="0" width="50" height="50"></rect>
+            <path id="Line-3" d="M39.1078772,38.9407199 L36.1910617,30.5438269 L30.7109841,36.0239044 L39.1078772,38.9407199 Z M11.6583848,12.0215576 L33.4510229,33.8141957 L33.716188,34.0793608 L34.246518,33.5490307 L33.981353,33.2838656 L12.1887148,11.4912275 L11.9235498,11.2260624 L11.3932197,11.7563925 L11.6583848,12.0215576 Z" fill="#3B3B3B"></path>
+        </g>
+    </g>
+</svg>
