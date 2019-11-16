@@ -14,6 +14,7 @@ export default () => {
   const [aboutOn, setAboutOn] = useState(false);
   const [contactOn, setContactOn] = useState(false);
   const [tagFilter, setTagFilter] = useState('');
+  const [focus, setFocus] = useState(null);
   const tagOn = tagFilter.length != 0;
   const selectedProjects = tagOn
     ? projects.filter(project => project.tags.includes(tagFilter))
@@ -21,6 +22,8 @@ export default () => {
   const relatedTags = tagOn
     ? selectedProjects.flatMap(project => project.tags)
     : [];
+
+  const hoverTags = projects[focus] ? projects[focus].tags : [];
 
   const blurContext = aboutOn || contactOn;
   return (
@@ -31,10 +34,11 @@ export default () => {
           tagFilter={tagFilter}
           handleTagSelection={setTagFilter}
           relatedTags={relatedTags}
+          hoverTags={hoverTags}
         />
       </div>
       {blurContext && <div className="w-100 h-100 fixed">block</div>}
-      <div className="fl w-75">
+      <div className="fl w-80">
         {tagOn ? (
           <span className="close" onClick={() => setTagFilter('')}>
             clear
@@ -57,7 +61,13 @@ export default () => {
         >
           <div id="project-section">
             {selectedProjects.map((project, index) => (
-              <ProjectPreview model={project} key={project.id} index={index} />
+              <ProjectPreview
+                model={project}
+                key={project.id}
+                index={index}
+                focus={focus}
+                handleSetFocus={setFocus}
+              />
             ))}
           </div>
         </div>

@@ -64,12 +64,12 @@ footer {
   position: relative;
   height: 181px;
   overflow: hidden;
-  .content {
-    animation: floatText 20s infinite linear;
-    &:hover {
-      animation-play-state: paused;
-    }
-  }
+  // .content {
+  //   animation: floatText 20s infinite linear;
+  //   &:hover {
+  //     animation-play-state: paused;
+  //   }
+  // }
 }
 
 .overlay {

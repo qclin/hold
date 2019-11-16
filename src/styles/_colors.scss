@@ -34,28 +34,20 @@ footer {
   }
 }
 
-.coming-soon {
-  .overlay {
-    margin-top: 8em;
-    color: #000;
-  }
-}
-.coming-soon,
-.keep-reading {
-  color: $off-white;
-}
 .bg-off-white {
   background: $off-white;
 }
 
 .teal-overlay {
   mix-blend-mode: difference;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: transparent;
-  &:hover {
-    background-color: #488c82;
+  background-color: #488c82;
+}
+
+.focus {
+  .teal-overlay {
+    transition: 2s;
+    transition-delay: 1s;
+    background: transparent;
   }
 }
 
@@ -68,4 +60,17 @@ footer {
   .time-stamp {
     color: $txt-gray-light;
   }
+}
+
+.coming-soon {
+  .overlay {
+    margin-top: 8em;
+    color: #000;
+  }
+}
+.coming-soon,
+.keep-reading {
+  transition: 0s;
+  transition-delay: 0s;
+  color: $off-white;
 }

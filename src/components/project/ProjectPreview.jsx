@@ -1,14 +1,34 @@
 import React, { useState } from 'react';
 import ReactTooltip from 'react-tooltip';
+import debounce from 'lodash/debounce';
 
-export default function ProjectPreview({ model, index }) {
+export default function ProjectPreview({
+  model,
+  index,
+  handleSetFocus,
+  focus
+}) {
   // TODO: update this later
   const tmpImage = model.images[0];
-  const nthOf = index % 2 == 0 ? 'even' : 'odd';
   const [placeholder, setPlaceholder] = useState(false);
-  const styles = `fl w-40 pa3 text-box ${nthOf}`;
+
+  const styles = 'fl w-30 pa3 text-box';
   return (
-    <div className="project-preview items-top">
+    <div
+      className={
+        focus == index
+          ? 'focus project-preview items-top'
+          : 'project-preview items-top'
+      }
+      onMouseEnter={e => {
+        e.stopPropagation();
+        handleSetFocus(index);
+      }}
+      onMouseLeave={e => {
+        e.stopPropagation();
+        handleSetFocus(null);
+      }}
+    >
       <div className={placeholder ? styles + ' coming-soon' : styles}>
         <h3 className="ma0">{model.name}</h3>
         <span className="ma0">{model.date}</span>
@@ -29,7 +49,7 @@ export default function ProjectPreview({ model, index }) {
           <img src="/images/Copy.svg" />
         </span>
       </div>
-      <div className="w-60 image-wrapper fr">
+      <div className="w-70 image-wrapper fr">
         <div
           className="teal-overlay"
           data-tip={tmpImage.name}
@@ -43,7 +63,7 @@ export default function ProjectPreview({ model, index }) {
         >
           {tmpImage.name}
         </ReactTooltip>
-        <img src={tmpImage.path} alt={tmpImage.name} />
+        <img className="w-100" src={tmpImage.path} alt={tmpImage.name} />
       </div>
     </div>
   );

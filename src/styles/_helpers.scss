@@ -9,20 +9,20 @@
   max-width: 43em;
 }
 
-.teal-overlay:hover{
+.teal-overlay:hover {
   cursor: crosshair;
 }
 
-.__react_component_tooltip{
+.__react_component_tooltip {
   border-radius: 0;
-  &:before, &:after{
+  &:before,
+  &:after {
     display: none;
   }
 }
 
-
-.project-preview{
-  .__react_component_tooltip{
+.project-preview {
+  .__react_component_tooltip {
     padding: 0;
     text-transform: uppercase;
     font-weight: bold;
@@ -30,5 +30,16 @@
     background: none !important;
     border-bottom: 1px solid red;
     font-style: italic;
+  }
+}
+.opacity-0 {
+  opacity: 0;
+}
+
+.tag-panel {
+  &:hover {
+    .opacity-0 {
+      opacity: 1;
+    }
   }
 }
