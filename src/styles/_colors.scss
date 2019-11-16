@@ -61,16 +61,13 @@ footer {
     color: $txt-gray-light;
   }
 }
-
+#about,
 .coming-soon {
   .overlay {
-    margin-top: 8em;
-    color: #000;
+    color: $brownish-grey;
   }
 }
 .coming-soon,
 .keep-reading {
-  transition: 0s;
-  transition-delay: 0s;
   color: $off-white;
 }

@@ -61,10 +61,34 @@
 }
 
 .project-preview.focus {
+  animation: expandHeight 0.5s ease-in 1s;
+  animation-fill-mode: forwards;
+
   .text-box {
-    transition: 1s;
-    transition-delay: 1s;
+    animation: moveToCenter 1s ease-in 1s;
+    max-height: 500px;
+    animation-fill-mode: forwards;
+  }
+  .expand-arrow {
+    display: block;
+  }
+}
+
+@keyframes moveToCenter {
+  from {
+    left: 0;
+  }
+  to {
     left: 100px;
+  }
+}
+
+@keyframes expandHeight {
+  from {
+    height: 500px;
+  }
+  to {
+    height: 600px;
   }
 }
 
@@ -106,5 +130,14 @@ footer {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
+    color: $brownish-grey;
   }
+}
+
+.title {
+  margin: 0 auto;
+  text-align: center;
+  background: #fff;
+  height: 30px;
+  color: $brownish-grey;
 }

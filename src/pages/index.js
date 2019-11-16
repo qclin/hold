@@ -37,7 +37,7 @@ export default () => {
           hoverTags={hoverTags}
         />
       </div>
-      {blurContext && <div className="w-100 h-100 fixed">block</div>}
+      {blurContext && <div className="w-100 h-100 fixed"></div>}
       <div className="fl w-80">
         {tagOn ? (
           <span className="close" onClick={() => setTagFilter('')}>
@@ -60,6 +60,7 @@ export default () => {
           }}
         >
           <div id="project-section">
+            <div className="title">PROJECTS</div>
             {selectedProjects.map((project, index) => (
               <ProjectPreview
                 model={project}

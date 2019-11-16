@@ -7,6 +7,11 @@ footer {
   left: 0;
   cursor: pointer;
   height: 60px;
+  &.showContact {
+    transition: 0.5s;
+    height: 300px;
+    background: $off-white;
+  }
   span {
     margin: 12px;
   }
@@ -43,35 +48,25 @@ footer {
   .content {
     overflow-y: scroll;
     max-height: 95vh;
+    position: inherit;
   }
-}
-
-#about,
-#contact {
-  .content {
-    width: max-content;
-    background: #fff;
-  }
-}
-#contact {
-  width: 100%;
-  position: fixed;
-  z-index: 10;
-  top: 35%;
 }
 
 #about.scroll {
   position: relative;
   height: 181px;
   overflow: hidden;
-  // .content {
-  //   animation: floatText 20s infinite linear;
-  //   &:hover {
-  //     animation-play-state: paused;
-  //   }
-  // }
+  animation: revealText 5s;
+  animation-fill-mode: forwards;
 }
-
+@keyframes revealText {
+  from {
+    height: 0;
+  }
+  to {
+    height: 181px;
+  }
+}
 .overlay {
   text-transform: uppercase;
   text-align: center;
@@ -95,5 +90,11 @@ footer {
   }
   to {
     transform: translateY(-100%);
+  }
+}
+
+.coming-soon {
+  .overlay {
+    margin-top: 8em;
   }
 }

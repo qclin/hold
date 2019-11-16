@@ -4,8 +4,6 @@
   padding: 3px;
   color: $highlight-teal;
   background: $off-white;
-
-  // border: $highlight-teal 1px solid;
   margin: 0 0.2rem 0 0.1rem;
   cursor: pointer;
 }
@@ -25,6 +23,7 @@
 }
 
 .expand-arrow {
+  display: none;
   position: absolute;
   bottom: 0;
   right: 5px;
