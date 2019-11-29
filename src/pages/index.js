@@ -28,8 +28,23 @@ export default () => {
   const blurContext = aboutOn || contactOn;
   return (
     <div>
+
+      {blurContext && <div className="w-100 h-100 fixed"></div>}
+      {tagOn ? (
+        <span className="close fixed" onClick={() => setTagFilter('')}>
+          clear
+        </span>
+      ) : (
+        <AboutUs
+          type={aboutOn ? 'open' : 'scroll'}
+          handleAboutToggle={setAboutOn}
+          showNav={scroll.y > 150}
+        />
+      )}
       <div className={blurContext ? 'blur' : ''}>
+
         <TagPanel
+          fixed={scroll.y > 400}
           tagOn={tagOn}
           tagFilter={tagFilter}
           handleTagSelection={setTagFilter}
@@ -37,19 +52,8 @@ export default () => {
           hoverTags={hoverTags}
         />
       </div>
-      {blurContext && <div className="w-100 h-100 fixed"></div>}
       <div className="fl w-80">
-        {tagOn ? (
-          <span className="close" onClick={() => setTagFilter('')}>
-            clear
-          </span>
-        ) : (
-          <AboutUs
-            type={aboutOn ? 'open' : 'scroll'}
-            handleAboutToggle={setAboutOn}
-            showNav={scroll.y > 150}
-          />
-        )}
+
         <div
           className={blurContext ? 'blur home-body' : 'home-body'}
           onClick={() => {

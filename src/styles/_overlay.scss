@@ -45,26 +45,30 @@ footer {
   width: 100%;
   position: fixed;
   z-index: 10;
+  height: 95vh;
+  background: #fff;
   .content {
     overflow-y: scroll;
     max-height: 95vh;
+    animation: revealText 2s;
     position: inherit;
   }
+  margin-bottom: auto;
 }
 
 #about.scroll {
   position: relative;
   height: 181px;
   overflow: hidden;
-  animation: revealText 5s;
   animation-fill-mode: forwards;
+  margin-bottom: 10em;
 }
 @keyframes revealText {
   from {
-    height: 0;
+    height: 181px;
   }
   to {
-    height: 181px;
+    height: 100%;
   }
 }
 .overlay {

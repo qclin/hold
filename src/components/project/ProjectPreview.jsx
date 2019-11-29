@@ -24,10 +24,6 @@ export default function ProjectPreview({
         e.stopPropagation();
         handleSetFocus(index);
       }}
-      onMouseLeave={e => {
-        e.stopPropagation();
-        handleSetFocus(null);
-      }}
     >
       <div className={placeholder ? styles + ' coming-soon' : styles}>
         <h3 className="ma0">{model.name}</h3>

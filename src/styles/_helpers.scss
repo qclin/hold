@@ -37,9 +37,8 @@
 }
 
 .tag-panel {
-  &:hover {
-    .opacity-0 {
-      opacity: 1;
-    }
-  }
+}
+
+.fixed.top-0{
+  top: 0
 }

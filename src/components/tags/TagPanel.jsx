@@ -8,11 +8,12 @@ export default function TagPanel(props) {
     tagFilter,
     handleTagSelection,
     relatedTags,
-    hoverTags
+    hoverTags,
+    fixed
   } = props;
   return (
     <div className="tag-panel fl w-20">
-      <div className="fixed">
+      <div className={fixed ? "fixed top-0": "fixed"}>
         {tags.map((tag, index) => {
           if (tagOn && !relatedTags.includes(tag)) {
             return (
