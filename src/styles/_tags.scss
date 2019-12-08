@@ -1,0 +1,34 @@
+.product {
+  background: $off-white;
+  &:hover {
+    background: $tag-green;
+  }
+}
+//in black
+
+.client {
+  // in pink
+  text-decoration: underline wavy blue;
+
+  &:hover {
+    background: pink;
+    color: blue;
+    text-decoration: none;
+  }
+}
+
+.action {
+  // green
+  &:hover {
+    border: 1px solid $tag-green;
+  }
+}
+
+.goal {
+  // purple
+  text-decoration: underline double pink;
+  &:hover {
+    background: black;
+    color: pink;
+  }
+}

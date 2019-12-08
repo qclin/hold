@@ -10,18 +10,22 @@
 
 .annotations {
   pointer-events: auto !important;
-  width: 340px;
+  width: 21.25rem;
+  max-width: 80%;
   &.wide {
-    width: 800px;
+    width: 50rem;
   }
   cursor: crosshair;
   background: $off-white;
+  opacity: 1 !important;
   &:hover {
     visibility: visible !important;
     opacity: 1 !important;
   }
 }
-
+.__react_component_tooltip.type-light {
+  background: $off-white !important;
+}
 .expand-arrow {
   display: none;
   position: absolute;

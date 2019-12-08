@@ -58,12 +58,13 @@ h6 {
 }
 
 #about {
-  font-family: 'AtlasGrotesk-Regular', sans-serif;
   font-size: 23px;
-  line-height: 1.4;
+  line-height: 1.74;
   letter-spacing: 0.04px;
   color: $txt-gray;
+  font-family: 'AtlasTypewriter-Light';
 }
+
 .side-bar {
   height: 18px;
   font-family: 'AtlasGrotesk-Bold', sans-serif;
@@ -107,7 +108,7 @@ h6 {
 
 #contact {
   font-family: 'AtlasGrotesk-Regular', sans-serif;
-  font-size: 23px;
-  line-height: 1.7;
+  font-size: 17px;
+  line-height: 1.6;
   letter-spacing: 0.04px;
 }

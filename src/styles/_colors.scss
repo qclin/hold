@@ -2,6 +2,7 @@ $txt-gray: #1f1f1f;
 $txt-gray-light: #737373;
 
 $highlight-teal: #00c1aa;
+$tag-green: #39ff9c;
 $bg-white: #ffffff;
 $bg-zerox-gray: #b3a4a8;
 
@@ -30,8 +31,10 @@ footer {
 }
 
 .teal-overlay {
-  mix-blend-mode: difference;
-  background-color: #488c82;
+  // mix-blend-mode: difference;
+  // background-color: #488c82;
+  mix-blend-mode: hue;
+  background-color: #fffbce;
 }
 
 .focus {

@@ -90,6 +90,13 @@ export default function AboutUs(props) {
             </p>
           </div>
         </div>
+        <span
+          id="openAbout"
+          className="absolute"
+          onClick={() => handleAboutToggle(false)}
+        >
+          <img src={isScroll ? './icons/expand.svg' : './icons/collapse.svg'} />
+        </span>
       </div>
     </>
   );

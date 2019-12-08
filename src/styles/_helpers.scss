@@ -32,13 +32,22 @@
     font-style: italic;
   }
 }
-.opacity-0 {
-  opacity: 0;
-}
 
 .tag-panel {
 }
 
-.fixed.top-0{
-  top: 0
+.fixed.top-0 {
+  top: 0;
+}
+
+.clipped-shadow {
+  box-shadow: 0 2px 4px 0.3px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.main {
+  &.modal-open {
+    height: 100vh;
+    overflow-y: hidden;
+  }
 }

@@ -1,17 +1,11 @@
 nav,
 footer {
   background: #fff;
-  text-align: center;
   z-index: 10;
   position: fixed;
   left: 0;
   cursor: pointer;
-  height: 60px;
-  &.showContact {
-    transition: 0.5s;
-    height: 300px;
-    background: $off-white;
-  }
+  height: 55px;
   span {
     margin: 12px;
   }
@@ -19,14 +13,22 @@ footer {
 
 nav {
   top: 0;
+  text-align: center;
 }
 
 footer {
   bottom: 0;
-  text-align: center;
   width: 100%;
+  &.showContact {
+    transition: 0.5s;
+    height: 50vh;
+    background: $off-white;
+  }
 }
-
+#openAbout {
+  bottom: 1rem;
+  right: 2rem;
+}
 #about {
   .content {
     display: none;
@@ -44,24 +46,29 @@ footer {
 #about.open {
   width: 100%;
   position: fixed;
-  z-index: 10;
-  height: 95vh;
+  z-index: 20;
+  height: 100vh;
   background: #fff;
+
   .content {
-    overflow-y: scroll;
-    max-height: 95vh;
     animation: revealText 2s;
-    position: inherit;
+    position: relative;
+    height: 100%;
+    overflow-y: scroll;
   }
   margin-bottom: auto;
 }
 
 #about.scroll {
   position: relative;
-  height: 181px;
-  overflow: hidden;
   animation-fill-mode: forwards;
-  margin-bottom: 10em;
+  height: 35rem;
+
+  .content {
+    height: 20rem;
+    overflow: hidden;
+    margin-bottom: 10em;
+  }
 }
 @keyframes revealText {
   from {

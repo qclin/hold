@@ -4,7 +4,7 @@ import path from 'path';
 export default {
   basePath: '/',
   getRoutes: async () => {
-    const { data: tags } = require('./public/doc/tagsSimple.json');
+    const { data: tags } = require('./public/doc/tags.json');
     const { data: projects } = require('./public/doc/projects.json');
     const { data: footnotes } = require('./public/doc/footnotes.json');
 

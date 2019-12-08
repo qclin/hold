@@ -1,0 +1,34 @@
+@media (min-width: 768px) {
+  .tag-panel {
+    display: block;
+  }
+  .project-preview {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 650px;
+  }
+  .text-box {
+    width: 100%;
+    position: absolute;
+    box-shadow: 2px 2px 4px grey;
+    p.measure {
+      display: block;
+    }
+    &.even {
+      left: -5em;
+    }
+    &.odd {
+      right: -5em;
+    }
+  }
+
+  .awssld {
+    height: 650px;
+  }
+  footer {
+    &.showContact {
+      height: 225px;
+    }
+  }
+}

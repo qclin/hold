@@ -16,6 +16,7 @@ export default () => {
   const [tagFilter, setTagFilter] = useState('');
   const [focus, setFocus] = useState(null);
   const tagOn = tagFilter.length != 0;
+
   const selectedProjects = tagOn
     ? projects.filter(project => project.tags.includes(tagFilter))
     : projects;
@@ -24,25 +25,26 @@ export default () => {
     : [];
 
   const hoverTags = projects[focus] ? projects[focus].tags : [];
-
-  const blurContext = aboutOn || contactOn;
+  const blurContext = contactOn;
   return (
-    <div>
-
-      {blurContext && <div className="w-100 h-100 fixed"></div>}
-      {tagOn ? (
-        <span className="close fixed" onClick={() => setTagFilter('')}>
-          clear
-        </span>
-      ) : (
+    <div className={aboutOn ? 'main modal-open' : 'main'}>
+      {!tagOn && (
         <AboutUs
           type={aboutOn ? 'open' : 'scroll'}
           handleAboutToggle={setAboutOn}
           showNav={scroll.y > 150}
         />
       )}
-      <div className={blurContext ? 'blur' : ''}>
-
+      <div
+        id="page-body"
+        className={blurContext ? 'blur' : ''}
+        onClick={() => {
+          if (blurContext) {
+            setContactOn(false);
+            setAboutOn(false);
+          }
+        }}
+      >
         <TagPanel
           fixed={scroll.y > 400}
           tagOn={tagOn}
@@ -51,18 +53,8 @@ export default () => {
           relatedTags={relatedTags}
           hoverTags={hoverTags}
         />
-      </div>
-      <div className="fl w-80">
 
-        <div
-          className={blurContext ? 'blur home-body' : 'home-body'}
-          onClick={() => {
-            if (blurContext) {
-              setContactOn(false);
-              setAboutOn(false);
-            }
-          }}
-        >
+        <div className="fl w-100 w-80-ns">
           <div id="project-section">
             <div className="title">PROJECTS</div>
             {selectedProjects.map((project, index) => (
@@ -76,13 +68,12 @@ export default () => {
             ))}
           </div>
         </div>
-
-        <Contact
-          contactOn={contactOn}
-          showFooter={scroll.reachedBottom}
-          handleContactToggle={setContactOn}
-        />
       </div>
+      <Contact
+        contactOn={contactOn}
+        showFooter={scroll.reachedBottom}
+        handleContactToggle={setContactOn}
+      />
     </div>
   );
 };

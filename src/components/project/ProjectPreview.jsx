@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import ReactTooltip from 'react-tooltip';
 import debounce from 'lodash/debounce';
+import ImageCarousel from './ImageCarousel';
+import useWindowSize from '../../utils/use-window';
 
 export default function ProjectPreview({
   model,
@@ -8,59 +10,48 @@ export default function ProjectPreview({
   handleSetFocus,
   focus
 }) {
-  // TODO: update this later
-  const tmpImage = model.images[0];
   const [placeholder, setPlaceholder] = useState(false);
-
-  const styles = 'fl w-30 pa3 text-box';
+  const isEven = index % 2 == 0;
+  const { isDesktop } = useWindowSize();
+  const textBoxStyles = 'w-100 w-30-ns text-box-wrapper';
   return (
     <div
       className={
         focus == index
-          ? 'focus project-preview items-top'
-          : 'project-preview items-top'
+          ? 'focus project-preview items-top mb3'
+          : 'project-preview items-top mb3'
       }
       onMouseEnter={e => {
         e.stopPropagation();
         handleSetFocus(index);
       }}
     >
-      <div className={placeholder ? styles + ' coming-soon' : styles}>
-        <h3 className="ma0">{model.name}</h3>
-        <span className="ma0">{model.date}</span>
-        {placeholder && <div className="overlay">coming soon</div>}
+      {(isEven || !isDesktop) && <ImageCarousel images={model.images} />}
+      <div
+        className={placeholder ? textBoxStyles + ' coming-soon' : textBoxStyles}
+      >
+        <div className={isEven ? 'even text-box pa3 ' : 'odd text-box  pa3 '}>
+          <h3 className="ma0">{model.name}</h3>
+          <span className="ma0">{model.date}</span>
+          {placeholder && <div className="overlay">coming soon</div>}
 
-        <p className="measure bt b--silver">
-          {model.blurb.substring(0, 480)}...
-        </p>
-        <span
-          className="expand-arrow"
-          onClick={() => {
-            setPlaceholder(true);
-            setTimeout(() => {
-              setPlaceholder(false);
-            }, 2000);
-          }}
-        >
-          <img src="/images/Copy.svg" />
-        </span>
+          <p className="measure bt b--silver">
+            {model.blurb.substring(0, 480)}...
+          </p>
+          <span
+            className="expand-arrow"
+            onClick={() => {
+              setPlaceholder(true);
+              setTimeout(() => {
+                setPlaceholder(false);
+              }, 2000);
+            }}
+          >
+            <img src="/icons/expand.svg" />
+          </span>
+        </div>
       </div>
-      <div className="w-70 image-wrapper fr">
-        <div
-          className="teal-overlay"
-          data-tip={tmpImage.name}
-          data-for={`imagePreview${model.id}`}
-        ></div>
-        <ReactTooltip
-          place="right"
-          type="light"
-          effect="float"
-          id={`imagePreview${model.id}`}
-        >
-          {tmpImage.name}
-        </ReactTooltip>
-        <img className="w-100" src={tmpImage.path} alt={tmpImage.name} />
-      </div>
+      {!isEven && isDesktop && <ImageCarousel images={model.images} />}
     </div>
   );
 }

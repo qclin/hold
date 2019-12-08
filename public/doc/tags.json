@@ -1,27 +1,30 @@
 {
   "data": [
-    { "id": 1, "label": "advocacy", "value": "advocacy" },
-    { "id": 2, "label": "cultural production", "value": "cultural_production" },
-    {
-      "id": 3,
-      "label": "environmental advocacy",
-      "value": "environmental_advocacy"
-    },
-    { "id": 4, "label": "ecology", "value": "ecology" },
-    { "id": 5, "label": "global health", "value": "global_health" },
-    {
-      "id": 6,
-      "label": "human+environment relations",
-      "value": "human_environment_relations"
-    },
-    {
-      "id": 7,
-      "label": "knowledge infrastructure",
-      "value": "knowledge_infrastructure"
-    },
-    { "id": 8, "label": "land management", "value": "land_management" },
-    { "id": 9, "label": "sustainability", "value": "sustainability" },
-    { "id": 10, "label": "resilience", "value": "resilience" },
-    { "id": 11, "label": "visibility", "value": "visibility" }
+    { "name": "Advocacy", "type": "goal" },
+    { "name": "Archive", "type": "product" },
+    { "name": "Community organizing", "type": "action" },
+    { "name": "Coordination", "type": "action" },
+    { "name": "Crowd-source", "type": "action" },
+    { "name": "Cultural production", "type": "client" },
+    { "name": "Ecology", "type": "client" },
+    { "name": "Environmental", "type": "client" },
+    { "name": "Emergency response", "type": "action" },
+    { "name": "Global health", "type": "client" },
+    { "name": "Human-environment relations", "type": "goal" },
+    { "name": "Knowledge infrastructure", "type": "action" },
+    { "name": "Land management", "type": "client" },
+    { "name": "Logistics", "type": "action" },
+    { "name": "Mapping", "type": "action" },
+    { "name": "Monitoring & assessment ", "type": "action" },
+    { "name": "NGO", "type": "client" },
+    { "name": "Platform", "type": "product" },
+    { "name": "Prototype", "type": "product" },
+    { "name": "Realtime reporting", "type": "action" },
+    { "name": "Sustainability", "type": "goal" },
+    { "name": "Taxonomy", "type": "action" },
+    { "name": "Research", "type": "product" },
+    { "name": "Resilience", "type": "goal" },
+    { "name": "Visibility", "type": "goal" },
+    { "name": "Website", "type": "product" }
   ]
 }
