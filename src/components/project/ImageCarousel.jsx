@@ -11,7 +11,7 @@ export default function ImageCarousel({ images }) {
         <AwesomeSlider
           cssModule={AwesomeSliderStyles}
           bullets={false}
-          organicArrows={false}
+          organicArrows={true}
         >
           {images.map((image, index) => (
             <div data-src={image.path} key={index} />

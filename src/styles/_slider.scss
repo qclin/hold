@@ -1,15 +1,23 @@
 .awssld {
   --organic-arrow-thickness: 1px;
-  --organic-arrow-height: 25px;
-  --organic-arrow-color: #26456f;
+  --organic-arrow-height: 8rem;
+  --organic-arrow-color: #ffffff;
   --loader-bar-color: $off-white;
   --loader-bar-height: 10px;
 }
 
 .awssld__next {
-  cursor: crosshair, auto !important;
 }
 
 .awssld__prev {
-  cursor: crosshair, auto !important;
+}
+
+.awssld__controls__arrow-left:before,
+.awssld__controls__arrow-right:after {
+  transform: rotate(30deg);
+}
+
+.awssld__controls__arrow-left:after,
+.awssld__controls__arrow-right:before {
+  transform: rotate(-30deg);
 }

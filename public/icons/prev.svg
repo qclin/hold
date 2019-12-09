@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="39px" height="9px" viewBox="0 0 39 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="56px" height="163px" viewBox="0 0 56 163" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
-    <title>Line 3</title>
+    <title>Arrow Image Carousel Copy</title>
     <desc>Created with Sketch.</desc>
-    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path id="Line-3" d="M27.1858579,12.5490307 L5.39321972,-9.24360749 L5.9235498,-9.77393757 L27.716188,12.0187006 L30.1910617,9.54382685 L33.1078772,17.9407199 L24.7109841,15.0239044 L27.1858579,12.5490307 Z" fill="#FFFFFF" fill-rule="nonzero"></path>
+    <g id="NEW" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MSF-/-Hoverover-on-Studio-Hold" transform="translate(-989.000000, -432.000000)" stroke="#969696">
+            <g id="Arrow-Image-Carousel-Right" style="mix-blend-mode: exclusion;" transform="translate(1019.000000, 514.000000) scale(-1, -1) translate(-1019.000000, -514.000000) translate(985.000000, 428.000000)">
+                <polyline id="Path-2" points="9 5 63 87.6478873 9 168"></polyline>
+            </g>
+        </g>
     </g>
 </svg>
