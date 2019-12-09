@@ -1,9 +1,9 @@
 .awssld {
-  --organic-arrow-thickness: 1px;
-  --organic-arrow-height: 8rem;
-  --organic-arrow-color: #ffffff;
-  --loader-bar-color: $off-white;
-  --loader-bar-height: 10px;
+  --organic-arrow-thickness: 1px !important;
+  --organic-arrow-height: 8rem !important;
+  --organic-arrow-color: #ffffff !important;
+  --loader-bar-color: $off-white !important;
+  --loader-bar-height: 10px !important;
 }
 
 .awssld__next {
@@ -14,10 +14,17 @@
 
 .awssld__controls__arrow-left:before,
 .awssld__controls__arrow-right:after {
-  transform: rotate(30deg);
+  transform: rotate(30deg) !important;
 }
 
 .awssld__controls__arrow-left:after,
 .awssld__controls__arrow-right:before {
-  transform: rotate(-30deg);
+  transform: rotate(-30deg) !important;
+}
+
+.awssld__content {
+  img,
+  video {
+    top: 50%;
+  }
 }
