@@ -1,7 +1,7 @@
 .product {
   background: $off-white;
   &:hover {
-    background: $tag-green;
+    background: $greenish-cyan;
   }
 }
 //in black
@@ -11,22 +11,23 @@
   text-decoration: underline wavy blue;
 
   &:hover {
-    background: pink;
+    background: $bright-magenta;
     color: blue;
     text-decoration: none;
   }
 }
 
 .action {
+  border: 1px solid $page-white;
   // green
   &:hover {
-    border: 1px solid $tag-green;
+    border: 1px solid $greenish-cyan;
   }
 }
 
 .goal {
   // purple
-  text-decoration: underline double pink;
+  text-decoration: underline double $bright-magenta;
   &:hover {
     background: black;
     color: pink;

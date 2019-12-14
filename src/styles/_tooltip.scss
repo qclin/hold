@@ -2,10 +2,10 @@
   position: relative;
   top: -12px;
   padding: 3px;
-  color: $highlight-teal;
   background: $off-white;
   margin: 0 0.2rem 0 0.1rem;
   cursor: pointer;
+  color: $brownish-grey;
 }
 
 .annotations {
@@ -27,7 +27,6 @@
   background: $off-white !important;
 }
 .expand-arrow {
-  display: none;
   position: absolute;
   bottom: 0;
   right: 5px;

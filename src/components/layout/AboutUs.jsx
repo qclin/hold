@@ -1,101 +1,80 @@
 import React, { useState } from 'react';
 import { useRouteData } from 'react-static';
-import Annotation from './Annotation';
+import Annotation, { renderImage, renderMark } from './Annotation';
 
 export default function AboutUs(props) {
   const { footnotes } = useRouteData();
   const { type, handleAboutToggle, showNav } = props;
-  const [keepReading, setKeepReading] = useState(false);
   const isScroll = type == 'scroll';
   return (
     <>
       <nav
         onClick={() => handleAboutToggle(true)}
+        id="hold"
         className={showNav ? 'show' : 'hide'}
       >
-        <span>STUDIO HOLD</span>
+        <span className="label">STUDIO HOLD</span>
       </nav>
-      <div
-        id="about"
-        className={type}
-        onMouseEnter={() => {
-          isScroll && setKeepReading(true);
-        }}
-        onMouseLeave={() => {
-          isScroll && setKeepReading(false);
-        }}
-      >
-        {keepReading && (
-          <div
-            className="overlay"
-            onClick={() => {
-              handleAboutToggle(true);
-              setKeepReading(false);
-            }}
-          >
-            Keep Reading
-          </div>
-        )}
-        <div
-          className={
-            keepReading ? 'keep-reading content bg-white' : 'content  bg-white'
-          }
-        >
-          <div className="w-80">
+      <div id="about" className={type}>
+        <div className="content">
+          <div className="w-100 w-80-ns">
+            <span
+              id="back"
+              className="absolute"
+              onClick={() => handleAboutToggle(false)}
+            >
+              {!isScroll && <img src="./icons/collapse.svg" />}
+            </span>
             <p>
-              Hold
-              <Annotation id={1} key={1} footnote={footnotes[0]} />
-              designs creative support systems for political and social
-              practices for durable collectivities
-            </p>
-            <p>
-              With the desire to <span class="underline">support</span>
-              <Annotation id={2} key={2} footnote={footnotes[1]} isMark />
-              comes the speculation on what systems can create it. By support we
-              mean generating visibility to what has been overlooked in a
-              system. We think of dominant lineages of{' '}
-              <span class="underline">knowledge production</span>
-              <Annotation id={3} key={3} footnote={footnotes[2]} isMark wide />
-              and its impact on what has become{' '}
-              <span class="underline">prevalent</span>
-              <Annotation id={4} key={4} footnote={footnotes[3]} isMark />. We
-              engage with existing structures directly, study their context and
-              conditions in order to understand its strengths, uneven
-              differences and need to foreground undermined information. To
-              creatively experiment with{' '}
-              <span class="underline">reconfiguration</span>
-              <Annotation id={5} key={5} footnote={footnotes[4]} />
-              is to practice cultivating ‘support systems,’ to breed
-              collaborative dialogues that enable{' '}
-              <span class="underline">multiplicities of</span>
-              <Annotation id={6} key={6} footnote={footnotes[5]} isMark />
-              organizing, structuring and designing. Our work acknowledges the{' '}
-              <i>current</i> to strategize and implement about what comes{' '}
-              <i>next</i>.
+              Hold <Annotation id={1} key={1} footnote={footnotes[0]} />{' '}
+              develops support systems for political and social practices
+              engaged in durable futures.
             </p>
 
             <p>
-              As a design and technology studio we frame our methodology via{' '}
-              <span class="underline">collaboration</span>
-              <Annotation id={7} key={7} footnote={footnotes[6]} isMark />.
-              We’re motivated to utilize creative technology as a tool to
-              empower political and social practices that work towards fostering
-              collective care and durable futures. We work with individuals,
-              alliances and institutions who either are in need of cultural
-              visibility, alternative organizational structures or are actively
-              engaging with innovative forms of knowledge production. Hold is
-              available for design and consultancy for research, organizational
-              coordination, website identities, platform interfaces and digital
-              strategies.
+              As a design studio we frame our methodology through close dialogue
+              with our clients
+              <Annotation id={2} key={2} footnote={footnotes[1]} isMark />. We
+              work with individuals, alliances and institutions who either are
+              in need of visibility, alternative organizational structures or
+              engaged in their own practice. <p></p>Hold is available for design
+              and consultancy for research, organizational coordination, website
+              identities, platform interfaces and digital strategies.
             </p>
+
+            <p>
+              With the desire to support
+              <Annotation id={3} key={3} footnote={footnotes[2]} isMark /> comes
+              the speculation on what systems can create it. We engage with
+              existing structures, study their context and conditions in order
+              to understand its strengths, uneven differences and need to
+              foreground undermined information
+              <Annotation id={4} key={4} footnote={footnotes[3]} isMark />. By
+              experimenting with reconfiguration
+              <Annotation id={5} key={5} footnote={footnotes[4]} isMark /> we
+              nurture dialogues that enable multiple ways of organizing,
+              structuring and designing.{' '}
+            </p>
+            <div class="mobile footnotes">
+              {footnotes.map((note, index) => (
+                <div>
+                  [{index + 1}] {renderMark(note.text)}
+                  {note.images && note.images.map(img => renderImage(img))}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
         <span
           id="openAbout"
           className="absolute"
-          onClick={() => handleAboutToggle(false)}
+          onClick={() => handleAboutToggle(isScroll)}
         >
-          <img src={isScroll ? './icons/expand.svg' : './icons/collapse.svg'} />
+          {isScroll ? (
+            <img src="./icons/expand.svg" />
+          ) : (
+            <img id="collapse" src="./icons/collapse.svg" />
+          )}
         </span>
       </div>
     </>

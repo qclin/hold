@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useRouteData } from 'react-static';
 import ReactTooltip from 'react-tooltip';
 import debounce from 'lodash/debounce';
 import ImageCarousel from './ImageCarousel';
@@ -10,10 +11,12 @@ export default function ProjectPreview({
   handleSetFocus,
   focus
 }) {
-  const [placeholder, setPlaceholder] = useState(false);
   const isEven = index % 2 == 0;
   const { isDesktop } = useWindowSize();
-  const textBoxStyles = 'w-100 w-30-ns text-box-wrapper';
+  const [showText, setShowText] = useState(false);
+
+  const { tags } = useRouteData();
+  const projectTags = model.tags.map(id => tags.find(tag => tag.id == id));
   return (
     <div
       className={
@@ -26,28 +29,36 @@ export default function ProjectPreview({
         handleSetFocus(index);
       }}
     >
-      {(isEven || !isDesktop) && <ImageCarousel images={model.images} />}
-      <div
-        className={placeholder ? textBoxStyles + ' coming-soon' : textBoxStyles}
-      >
-        <div className={isEven ? 'even text-box pa3 ' : 'odd text-box  pa3 '}>
-          <h3 className="ma0">{model.name}</h3>
-          <span className="ma0">{model.date}</span>
-          {placeholder && <div className="overlay">coming soon</div>}
-
-          <p className="measure bt b--silver">
-            {model.blurb.substring(0, 480)}...
+      {(isEven || !isDesktop) && [
+        <div className="w-10"></div>,
+        <ImageCarousel images={model.images} onLeft={isEven} />
+      ]}
+      <div className="w-100 w-30-ns text-box-wrapper">
+        <div className={isEven ? 'even text-box' : 'odd text-box'}>
+          <h3 className="ma0 project-title">{model.name}</h3>
+          <p
+            className={
+              showText
+                ? 'show ma0 measure b--silver'
+                : 'project-description ma0 measure b--silver'
+            }
+          >
+            {model.brief}
+            <div className="my1 number time-stamp">✺ {model.date}</div>
+            <hr />
+            <div className="tag-wrapper">
+              {projectTags.map(tag => (
+                <span className={`${tag.type} project-tags`}>{tag.name}</span>
+              ))}
+            </div>
           </p>
           <span
-            className="expand-arrow"
+            className="expand-arrow mobile"
             onClick={() => {
-              setPlaceholder(true);
-              setTimeout(() => {
-                setPlaceholder(false);
-              }, 2000);
+              setShowText(true);
             }}
           >
-            <img src="/icons/expand.svg" />
+            {!showText && <img src="/icons/expand.svg" />}
           </span>
         </div>
       </div>

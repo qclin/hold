@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useRouteData } from 'react-static';
-import { useSpring, animated, config } from 'react-spring';
 import { useScroll } from '../utils/use-scroll';
 import AboutUs from '../components/layout/AboutUs';
 import Contact from '../components/layout/Contact';
@@ -12,52 +11,32 @@ export default () => {
   const scroll = useScroll();
 
   const [aboutOn, setAboutOn] = useState(false);
-  const [contactOn, setContactOn] = useState(false);
-  const [tagFilter, setTagFilter] = useState('');
   const [focus, setFocus] = useState(null);
-  const tagOn = tagFilter.length != 0;
 
-  const selectedProjects = tagOn
-    ? projects.filter(project => project.tags.includes(tagFilter))
-    : projects;
-  const relatedTags = tagOn
-    ? selectedProjects.flatMap(project => project.tags)
-    : [];
-
-  const hoverTags = projects[focus] ? projects[focus].tags : [];
-  const blurContext = contactOn;
+  const blurContext = aboutOn;
+  const showFrame = scroll.y > 500;
   return (
     <div className={aboutOn ? 'main modal-open' : 'main'}>
-      {!tagOn && (
-        <AboutUs
-          type={aboutOn ? 'open' : 'scroll'}
-          handleAboutToggle={setAboutOn}
-          showNav={scroll.y > 150}
-        />
-      )}
+      <AboutUs
+        type={aboutOn ? 'open' : 'scroll'}
+        handleAboutToggle={setAboutOn}
+        showNav={showFrame}
+      />
+      <div className="bt title label pt3">
+        <span>PROJECTS</span>
+      </div>
       <div
         id="page-body"
         className={blurContext ? 'blur' : ''}
         onClick={() => {
           if (blurContext) {
-            setContactOn(false);
             setAboutOn(false);
           }
         }}
       >
-        <TagPanel
-          fixed={scroll.y > 400}
-          tagOn={tagOn}
-          tagFilter={tagFilter}
-          handleTagSelection={setTagFilter}
-          relatedTags={relatedTags}
-          hoverTags={hoverTags}
-        />
-
-        <div className="fl w-100 w-80-ns">
+        <div className="fl w-100">
           <div id="project-section">
-            <div className="title">PROJECTS</div>
-            {selectedProjects.map((project, index) => (
+            {projects.map((project, index) => (
               <ProjectPreview
                 model={project}
                 key={project.id}
@@ -69,11 +48,7 @@ export default () => {
           </div>
         </div>
       </div>
-      <Contact
-        contactOn={contactOn}
-        showFooter={scroll.reachedBottom}
-        handleContactToggle={setContactOn}
-      />
+      <Contact showFooter={showFrame} />
     </div>
   );
 };

@@ -2,39 +2,45 @@ $txt-gray: #1f1f1f;
 $txt-gray-light: #737373;
 
 $highlight-teal: #00c1aa;
-$tag-green: #39ff9c;
 $bg-white: #ffffff;
 $bg-zerox-gray: #b3a4a8;
 
 $off-white: #fffde8;
+$page-white: #f2f1ed;
 $dark-navy-blue: #000217;
 $turquoise: #01c2ab;
 $sea: #399882;
 $brownish-grey: #737373;
+
+$bright-magenta: #ff00ff;
+$greenish-cyan: #39ff9c;
+$strong-pink: #e51f87;
+$primary-blue: #0000ff;
+$black-30: rgba(0, 0, 0, 0.3);
+$pale: #fffbce;
 
 #contact {
   color: $txt-gray;
   padding: 3em;
 }
 
-#about.scroll .content,
-nav,
-footer {
+nav {
   &:hover {
     cursor: pointer;
     background: $off-white;
   }
 }
 
-.bg-off-white {
-  background: $off-white;
+body,
+nav,
+.text-box {
+  background: $page-white;
 }
 
 .teal-overlay {
-  // mix-blend-mode: difference;
   // background-color: #488c82;
   mix-blend-mode: hue;
-  background-color: #fffbce;
+  background-color: $pale;
 }
 
 .focus {
@@ -45,16 +51,13 @@ footer {
   }
 }
 
-.text-box {
-  background: $bg-white;
-}
-
 .project-preview {
-  color: $txt-gray;
+  color: $dark-navy-blue;
   .time-stamp {
-    color: $txt-gray-light;
+    color: $primary-blue;
   }
 }
+
 #about,
 .coming-soon {
   .overlay {

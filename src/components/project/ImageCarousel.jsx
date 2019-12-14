@@ -1,23 +1,29 @@
 import React, { useState } from 'react';
-import AwesomeSlider from 'react-awesome-slider';
-import withAutoplay from 'react-awesome-slider/dist/autoplay';
-import AwesomeSliderStyles from 'react-awesome-slider/src/styles';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
-export default function ImageCarousel({ images }) {
+export default function ImageCarousel({ images, onLeft }) {
+  const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
   return (
-    <div className="w-100 w-70-ns image-wrapper">
+    <div
+      className={
+        onLeft
+          ? 'show-prev w-100 w-60-ns image-wrapper'
+          : 'show-next w-100 w-60-ns image-wrapper'
+      }
+    >
       <div className="teal-overlay"></div>
-      <div className="w-100-ns">
-        <AwesomeSlider
-          cssModule={AwesomeSliderStyles}
-          bullets={false}
-          organicArrows={true}
-        >
-          {images.map((image, index) => (
-            <div data-src={image.path} key={index} />
-          ))}
-        </AwesomeSlider>
-      </div>
+      <Slider {...settings}>
+        {images.map((image, index) => (
+          <img src={image.path} key={index} />
+        ))}
+      </Slider>
     </div>
   );
 }

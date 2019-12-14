@@ -1,6 +1,4 @@
-nav,
-footer {
-  background: #fff;
+nav {
   z-index: 10;
   position: fixed;
   left: 0;
@@ -14,20 +12,19 @@ footer {
 nav {
   top: 0;
   text-align: center;
+  border-bottom: 1px solid lightgrey;
 }
 
 footer {
-  bottom: 0;
   width: 100%;
-  &.showContact {
-    transition: 0.5s;
-    height: 50vh;
-    background: $off-white;
-  }
+  height: 50vh;
+  background: $pale;
+  position: absolute;
 }
 #openAbout {
   bottom: 1rem;
   right: 2rem;
+  cursor: pointer;
 }
 #about {
   .content {
@@ -38,8 +35,8 @@ footer {
   &.open,
   &.scroll {
     .content {
-      padding: 30px;
       display: block;
+      padding: 30px;
     }
   }
 }
@@ -48,8 +45,7 @@ footer {
   position: fixed;
   z-index: 20;
   height: 100vh;
-  background: #fff;
-
+  background: $page-white;
   .content {
     animation: revealText 2s;
     position: relative;
@@ -62,17 +58,17 @@ footer {
 #about.scroll {
   position: relative;
   animation-fill-mode: forwards;
-  height: 35rem;
+  height: 30rem;
 
   .content {
-    height: 20rem;
+    height: 16rem;
     overflow: hidden;
     margin-bottom: 10em;
   }
 }
 @keyframes revealText {
   from {
-    height: 181px;
+    height: 20rem;
   }
   to {
     height: 100%;
@@ -91,6 +87,8 @@ footer {
 }
 
 .blur {
+  pointer-events: none;
+
   filter: blur(5px);
   -webkit-filter: blur(5px);
 }

@@ -13,40 +13,54 @@ export default function TagPanel(props) {
   } = props;
   return (
     <div className="tag-panel fl w-20-ns">
-      <div className={fixed ? 'fixed top-0' : 'fixed'}>
+      <div className={fixed ? 'fixed top-0' : ''}>
         {tagOn && (
-          <button
-            className="close clipped-shadow"
-            onClick={() => handleTagSelection('')}
-          >
-            Clear all x
-          </button>
-        )}
-        {tags.map((tag, index) => {
-          if (tagOn && !relatedTags.includes(tag.name)) {
-            return (
-              <div key={index} className={`blur tag-item pointer ${tag.type}`}>
-                {tag.name}
-              </div>
-            );
-          } else {
-            return (
-              <div
-                key={index}
-                className="tag-item pointer"
-                onClick={() => handleTagSelection(tag.name)}
-              >
-                <span className={tagFilter == tag ? 'bg-off-white' : ''}>
-                  {hoverTags.includes(tag.name) ? (
+          <>
+            <button
+              className="close clipped-shadow"
+              onClick={() => handleTagSelection(null)}
+            >
+              Clear all x
+            </button>
+            {tags.map((tag, index) =>
+              !relatedTags.includes(tag.id) ? (
+                <div
+                  key={index}
+                  className={`blur tag-item pointer ${tag.type}`}
+                >
+                  {tag.name}
+                </div>
+              ) : (
+                <div
+                  key={index}
+                  className="tag-item pointer"
+                  onClick={() => handleTagSelection(tag.id)}
+                >
+                  <span className={tagFilter == tag ? 'bg-off-white' : ''}>
                     <span className={tag.type}>{tag.name}</span>
-                  ) : (
-                    <span className="blur">{tag.name}</span>
-                  )}
-                </span>
-              </div>
-            );
-          }
-        })}
+                  </span>
+                </div>
+              )
+            )}
+          </>
+        )}
+
+        {!tagOn &&
+          tags.map((tag, index) => (
+            <div
+              key={index}
+              className="tag-item pointer"
+              onClick={() => handleTagSelection(tag.id)}
+            >
+              <span className={tagFilter == tag ? 'bg-off-white' : ''}>
+                {hoverTags.includes(tag.id) ? (
+                  <span className={tag.type}>{tag.name}</span>
+                ) : (
+                  <span className="blur">{tag.name}</span>
+                )}
+              </span>
+            </div>
+          ))}
       </div>
     </div>
   );

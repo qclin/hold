@@ -1,17 +1,20 @@
 @media (min-width: 768px) {
   .tag-panel {
     display: block;
+    padding-left: 4em;
   }
   .project-preview {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     height: 650px;
+    margin: 6.5rem auto;
   }
   .text-box {
-    width: 100%;
+    min-width: 300px;
     position: absolute;
     box-shadow: 2px 2px 4px grey;
+    margin: 1rem;
     p.measure {
       display: block;
     }
@@ -22,13 +25,116 @@
       right: -5em;
     }
   }
-
+  .side-bar {
+    display: block;
+  }
   .awssld {
     height: 650px;
   }
+  .awssld__next {
+    opacity: 0;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .awssld__prev {
+    opacity: 0;
+    &:hover {
+      opacity: 1;
+    }
+  }
   footer {
-    &.showContact {
-      height: 225px;
+    height: 225px;
+  }
+  .mobile {
+    display: none;
+  }
+
+  #about {
+    &.open,
+    &.scroll {
+      .content {
+        padding: 1rem 6rem;
+      }
+    }
+  }
+
+  #about.scroll {
+    .content {
+      height: 20rem;
+    }
+  }
+  #project-section {
+    padding-bottom: 20em;
+  }
+  #collapse {
+    display: block;
+  }
+  #back {
+    display: none;
+  }
+
+  .image-wrapper {
+    img {
+      width: auto !important;
+      display: block;
+      height: -webkit-fill-available;
+    }
+  }
+
+  .show-prev {
+    .slick-next {
+      display: none !important;
+    }
+  }
+  .show-next {
+    .slick-prev {
+      display: none !important;
+    }
+  }
+  .slick-prev {
+    left: -7%;
+  }
+  .slick-next {
+    right: -4%;
+  }
+
+  .slick-prev,
+  .slick-next {
+    height: 326px;
+    transform: scale(1) translate(0, -50%);
+  }
+}
+
+@media (max-width: 768px) {
+  #collapse {
+    display: none;
+  }
+  #back,
+  #hold {
+    display: block;
+  }
+  #about {
+    &.open,
+    &.scroll {
+      .content {
+        margin-top: 55px;
+      }
+    }
+  }
+  #about.scroll .content .text-box-wrapper {
+    top: -20px;
+    z-index: 8;
+  }
+  .project-preview {
+    .text-box {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+
+      top: -2rem;
+      position: relative;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
     }
   }
 }

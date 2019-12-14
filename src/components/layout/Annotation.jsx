@@ -4,10 +4,9 @@ import marked from 'marked';
 
 export default function Annotation(props) {
   const { footnote, id, isMark, wide } = props;
-  const renderer = new marked.Renderer();
   return (
     <>
-      <span className="superscript" data-tip data-for={`note-${id}`}>
+      <span className="superscript number" data-tip data-for={`note-${id}`}>
         {id}
       </span>
       <ReactTooltip
@@ -18,30 +17,31 @@ export default function Annotation(props) {
         delayHide={500}
         className={wide ? 'annotations wide' : 'annotations'}
       >
-        {isMark ? (
-          <div
-            dangerouslySetInnerHTML={{
-              __html: marked(footnote.text, { renderer })
-            }}
-          />
-        ) : (
-          footnote.text
-        )}
-
-        {footnote.images &&
-          footnote.images.map(image =>
-            image.split('.').reverse()[0] == 'pdf' ? (
-              <object
-                data={image}
-                type="application/pdf"
-                width="250"
-                height="300"
-              />
-            ) : (
-              <img src={image} />
-            )
-          )}
+        {isMark ? renderMark(footnote.text) : footnote.text}
+        {footnote.images && footnote.images.map(image => renderImage(image))}
       </ReactTooltip>
     </>
   );
+}
+
+export function renderMark(text) {
+  const renderer = new marked.Renderer();
+
+  return (
+    <div
+      dangerouslySetInnerHTML={{
+        __html: marked(text, { renderer })
+      }}
+    />
+  );
+}
+export function renderImage(image) {
+  const isPDF = image.split('.').reverse()[0] == 'pdf';
+
+  if (isPDF) {
+    return (
+      <object data={image} type="application/pdf" width="250" height="300" />
+    );
+  }
+  return <img src={image} />;
 }
