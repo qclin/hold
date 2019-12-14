@@ -125,7 +125,10 @@ h6 {
   font-family: 'AtlasGrotesk-Bold', sans-serif;
   font-size: 13px;
   letter-spacing: 0.06px;
-  color: $brownish-grey;
+  color: $dark-navy-blue;
+  &:hover {
+    color: #fff;
+  }
 }
 
 #contact {

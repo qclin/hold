@@ -1,12 +1,16 @@
 import React from 'react';
 
 export default function Contact(props) {
-  const { showFooter } = props;
+  const { contactOn, handleContactToggle, showFooter } = props;
   const display = showFooter ? 'show' : 'hide';
+  const styles = contactOn ? display + ' showContact' : display;
 
   return (
     <>
-      <footer className={display + ' label'}>
+      <footer
+        onClick={() => handleContactToggle(true)}
+        className={styles + ' label'}
+      >
         <span>CONTACT</span>
         <div id="contact">
           <div className="fl w-100 w-50-ns">

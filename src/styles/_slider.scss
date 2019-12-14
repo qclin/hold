@@ -22,38 +22,6 @@
     top: 50% !important;
   }
 }
-@media (min-width: 768px) {
-  .image-wrapper {
-    img {
-      width: auto !important;
-      display: block;
-      height: -webkit-fill-available;
-    }
-  }
-
-  .show-prev {
-    .slick-next {
-      display: none !important;
-    }
-  }
-  .show-next {
-    .slick-prev {
-      display: none !important;
-    }
-  }
-  .slick-prev {
-    left: -7%;
-  }
-  .slick-next {
-    right: -4%;
-  }
-
-  .slick-prev,
-  .slick-next {
-    height: 326px;
-    transform: scale(1) translate(0, -50%);
-  }
-}
 
 .slick-prev {
   left: 7%;

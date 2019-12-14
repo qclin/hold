@@ -25,28 +25,7 @@
       right: -5em;
     }
   }
-  .side-bar {
-    display: block;
-  }
-  .awssld {
-    height: 650px;
-  }
-  .awssld__next {
-    opacity: 0;
-    &:hover {
-      opacity: 1;
-    }
-  }
 
-  .awssld__prev {
-    opacity: 0;
-    &:hover {
-      opacity: 1;
-    }
-  }
-  footer {
-    height: 225px;
-  }
   .mobile {
     display: none;
   }
@@ -104,6 +83,12 @@
   .slick-next {
     height: 326px;
     transform: scale(1) translate(0, -50%);
+  }
+  footer {
+    &.showContact {
+      transition: 0.5s;
+      height: 300px;
+    }
   }
 }
 

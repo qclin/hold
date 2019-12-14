@@ -49,7 +49,8 @@
     margin-bottom: 2.5rem;
   }
   .text-box {
-    width: 100%;
+    max-width: 100%;
+    width: 400px;
     z-index: 8;
     overflow: hidden;
     border: 1px solid $dark-navy-blue;
@@ -120,12 +121,10 @@
 nav,
 footer {
   span {
-    margin: 12px;
     padding: 10px;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-    color: $brownish-grey;
   }
 }
 

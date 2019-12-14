@@ -11,9 +11,10 @@ export default () => {
   const scroll = useScroll();
 
   const [aboutOn, setAboutOn] = useState(false);
+  const [contactOn, setContactOn] = useState(false);
   const [focus, setFocus] = useState(null);
 
-  const blurContext = aboutOn;
+  const blurContext = aboutOn || contactOn;
   const showFrame = scroll.y > 500;
   return (
     <div className={aboutOn ? 'main modal-open' : 'main'}>
@@ -29,26 +30,31 @@ export default () => {
         id="page-body"
         className={blurContext ? 'blur' : ''}
         onClick={() => {
+          console.log(blurContext, aboutOn, contactOn);
           if (blurContext) {
             setAboutOn(false);
+            setContactOn(false);
           }
         }}
-      >
-        <div className="fl w-100">
-          <div id="project-section">
-            {projects.map((project, index) => (
-              <ProjectPreview
-                model={project}
-                key={project.id}
-                index={index}
-                focus={focus}
-                handleSetFocus={setFocus}
-              />
-            ))}
-          </div>
+      ></div>
+      <div className="fl w-100">
+        <div id="project-section">
+          {projects.map((project, index) => (
+            <ProjectPreview
+              model={project}
+              key={project.id}
+              index={index}
+              focus={focus}
+              handleSetFocus={setFocus}
+            />
+          ))}
         </div>
       </div>
-      <Contact showFooter={showFrame} />
+      <Contact
+        contactOn={contactOn}
+        showFooter={showFrame}
+        handleContactToggle={setContactOn}
+      />
     </div>
   );
 };
