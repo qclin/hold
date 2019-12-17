@@ -17,13 +17,13 @@ export default function AboutUs(props) {
       </nav>
       <div id="about" className={type}>
         <div className="content">
-          <div className="w-100 w-80-ns">
+          <div className="w-100 w-80-ns measure-wide">
             <span
               id="back"
-              className="absolute"
+              className="fixed"
               onClick={() => handleAboutToggle(false)}
             >
-              {!isScroll && <img src="./icons/collapse.svg" />}
+              {!isScroll && <img src="./icons/black-copy@3x.png" />}
             </span>
             <p>
               Hold <Annotation id={1} key={1} footnote={footnotes[0]} />{' '}
@@ -37,12 +37,12 @@ export default function AboutUs(props) {
               <Annotation id={2} key={2} footnote={footnotes[1]} isMark />. We
               work with individuals, alliances and institutions who either are
               in need of visibility, alternative organizational structures or
-              engaged in their own practice. <p></p>Hold is available for design
-              and consultancy for research, organizational coordination, website
+              engaged in their own practice. Hold is available for design and
+              consultancy for research, organizational coordination, website
               identities, platform interfaces and digital strategies.
             </p>
 
-            <p>
+            <p class="part-2">
               With the desire to support
               <Annotation id={3} key={3} footnote={footnotes[2]} isMark /> comes
               the speculation on what systems can create it. We engage with
@@ -57,8 +57,9 @@ export default function AboutUs(props) {
             </p>
             <div class="mobile footnotes">
               {footnotes.map((note, index) => (
-                <div>
-                  [{index + 1}] {renderMark(note.text)}
+                <div id={`footnote-${note.id}`}>
+                  <span className="bg-off-white pa1">{note.id}</span>
+                  {renderMark(note.text)}
                   {note.images && note.images.map(img => renderImage(img))}
                 </div>
               ))}

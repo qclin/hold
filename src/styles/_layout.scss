@@ -45,9 +45,6 @@
   .text-box-wrapper {
     position: relative;
   }
-  .project-title {
-    margin-bottom: 2.5rem;
-  }
   .text-box {
     max-width: 100%;
     width: 400px;
@@ -59,40 +56,39 @@
     hr {
       border: solid 0.75px $dark-navy-blue;
     }
-    p {
-      height: 80%;
-      max-width: 90%;
+    p.project-description {
+      margin-bottom: 2.5rem;
     }
   }
 }
 .time-stamp {
-  margin-top: 2.5rem;
   margin-bottom: 1.25rem;
 }
 .project-description {
   display: none;
+  margin: 0;
 }
-
 .teal-overlay {
   top: 0;
   z-index: 5;
   position: absolute;
   width: 100%;
   height: 100%;
-}
-.focus {
-  .teal-overlay {
-    animation: receedToBack 2s ease-in 1s;
+  &:hover {
     animation-fill-mode: forwards;
+    animation: receedToBack 1s ease-in;
+    background: transparent;
   }
 }
 
 @keyframes receedToBack {
   from {
     z-index: 5;
+    background-color: $pale;
   }
   to {
     z-index: 0;
+    background: transparent;
   }
 }
 
@@ -132,7 +128,6 @@ footer {
   margin: 0 auto;
   text-align: center;
   height: 30px;
-  color: $brownish-grey;
 }
 .footnotes {
   p {

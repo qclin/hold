@@ -12,10 +12,9 @@ export default () => {
 
   const [aboutOn, setAboutOn] = useState(false);
   const [contactOn, setContactOn] = useState(false);
-  const [focus, setFocus] = useState(null);
 
   const blurContext = aboutOn || contactOn;
-  const showFrame = scroll.y > 500;
+  const showFrame = scroll.y > 439;
   return (
     <div className={aboutOn ? 'main modal-open' : 'main'}>
       <AboutUs
@@ -23,30 +22,20 @@ export default () => {
         handleAboutToggle={setAboutOn}
         showNav={showFrame}
       />
-      <div className="bt title label pt3">
-        <span>PROJECTS</span>
-      </div>
       <div
         id="page-body"
         className={blurContext ? 'blur' : ''}
         onClick={() => {
-          console.log(blurContext, aboutOn, contactOn);
           if (blurContext) {
             setAboutOn(false);
             setContactOn(false);
           }
         }}
       ></div>
-      <div className="fl w-100">
+      <div className={blurContext ? 'blur-content fl w-100' : 'fl w-100'}>
         <div id="project-section">
           {projects.map((project, index) => (
-            <ProjectPreview
-              model={project}
-              key={project.id}
-              index={index}
-              focus={focus}
-              handleSetFocus={setFocus}
-            />
+            <ProjectPreview model={project} key={project.id} index={index} />
           ))}
         </div>
       </div>

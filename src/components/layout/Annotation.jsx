@@ -1,9 +1,19 @@
 import React, { useState } from 'react';
 import ReactTooltip from 'react-tooltip';
 import marked from 'marked';
+import useWindowSize from '../../utils/use-window';
 
 export default function Annotation(props) {
+  const { isDesktop } = useWindowSize();
+
   const { footnote, id, isMark, wide } = props;
+  if (!isDesktop) {
+    return (
+      <a className="superscript number" href={`#footnote-${id}`}>
+        {id}
+      </a>
+    );
+  }
   return (
     <>
       <span className="superscript number" data-tip data-for={`note-${id}`}>

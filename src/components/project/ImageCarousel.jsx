@@ -6,9 +6,12 @@ import 'slick-carousel/slick/slick-theme.css';
 export default function ImageCarousel({ images, onLeft }) {
   const settings = {
     infinite: true,
-    speed: 500,
+    speed: 2000,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    lazyLoad: true,
+    centerPadding: '50px',
+    cssEase: 'ease'
   };
   return (
     <div

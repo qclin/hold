@@ -11,46 +11,19 @@ h6 {
   font-family: 'AtlasGrotesk-Regular', sans-serif;
 }
 
-.LargeBody_Atlas {
-  // headers, titles
-  font-family: AtlasGrotesk;
-  font-size: 23px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.4;
-  letter-spacing: 0.04px;
-  color: #1f1f1f;
-}
-
-.Body_Atlas {
-  // project text
-  font-family: Swiss721BT-Roman;
-  font-size: 20px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: 0.03px;
-  color: #1f1f1f;
-}
-
-.H1Bold {
-  font-family: AtlasGrotesk;
-  font-size: 15px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 0.07px;
-  color: var(--brownish-grey);
-}
-
 .project-title {
   font-weight: normal;
-  font-size: 40px;
   line-height: 1.13;
   letter-spacing: 0.04px;
+  font-size: 26px;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .project-title {
+    font-size: 40px;
+    margin-bottom: 6rem;
+  }
 }
 
 .project-description {
@@ -70,7 +43,8 @@ h6 {
   color: #1f1f1f;
 }
 
-#about {
+#about,
+#contact {
   font-size: 23px;
   line-height: 1.74;
   letter-spacing: 0.04px;
@@ -83,13 +57,12 @@ h6 {
   font-family: 'AtlasGrotesk-Bold', sans-serif;
   font-size: 15px;
   letter-spacing: 0.07px;
-  color: $txt-gray-light;
+  color: $dark-navy-blue;
 }
 
 .footnotes,
 .annotations,
 .tag-item,
-.superscript,
 .close {
   font-family: 'AtlasTypewriter-light', sans-serif;
   font-size: 15px;
@@ -100,40 +73,34 @@ h6 {
   letter-spacing: -0.5px;
 }
 .project-tags {
+  font-family: 'AtlasTypewriter-light', sans-serif;
   font-size: 15px;
-  margin-right: 0.3rem;
+  margin-right: 0.5rem;
+  line-height: 2;
+  letter-spacing: -0.5px;
   display: inline-block;
 }
 
-.project-preview,
-.project-page {
-  .time-stamp {
-    font-family: 'AtlasTypewriter-light', sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-    letter-spacing: -0.5px;
-    line-height: 2;
-  }
-  p {
-    font-size: 20px;
-    line-height: 1.5;
-    letter-spacing: 0.03px;
-  }
+.time-stamp {
+  font-family: 'AtlasTypewriter-light', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  line-height: 2;
 }
 
+.superscript,
 .label {
   font-family: 'AtlasGrotesk-Bold', sans-serif;
   font-size: 13px;
   letter-spacing: 0.06px;
   color: $dark-navy-blue;
-  &:hover {
-    color: #fff;
-  }
 }
-
+#hold,
 #contact {
-  font-family: 'AtlasGrotesk-Regular', sans-serif;
-  font-size: 17px;
-  line-height: 1.6;
-  letter-spacing: 0.04px;
+  span {
+    &:hover {
+      color: #fff;
+    }
+  }
 }

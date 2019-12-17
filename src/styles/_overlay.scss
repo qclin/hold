@@ -19,9 +19,16 @@ footer {
   background: $page-white;
   border-top: 1px solid $dark-navy-blue;
   &.showContact {
-    transition: 0.5s;
-    height: 50vh;
+    height: 75vh;
     background: $page-white;
+  }
+}
+#hold,
+#contact {
+  span {
+    &:hover {
+      color: #fff;
+    }
   }
 }
 #openAbout {
@@ -30,8 +37,12 @@ footer {
   cursor: pointer;
 }
 #about {
+  border-bottom: 1px solid $dark-navy-blue;
   .content {
     display: none;
+  }
+  .part-2 {
+    opacity: 0;
   }
 }
 #about {
@@ -49,43 +60,81 @@ footer {
   z-index: 20;
   height: 100vh;
   background: $page-white;
+  animation: dropHeight 2s;
+
   .content {
-    animation: revealText 2s;
     position: relative;
     height: 100%;
     overflow-y: scroll;
   }
+  .part-2 {
+    animation: revealText 2s;
+    animation-fill-mode: forwards;
+  }
   margin-bottom: auto;
+}
+@keyframes dropHeight {
+  from {
+    height: 30rem;
+  }
+  to {
+    height: 100%;
+  }
+}
+@keyframes revealText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 #about.scroll {
   position: relative;
-  animation-fill-mode: forwards;
   height: 30rem;
 
   .content {
-    height: 16rem;
+    height: 20rem;
     overflow: hidden;
     margin-bottom: 10em;
   }
 }
-#contact,
+
+#contact-dock,
 #hold {
   &:hover {
+    animation: fadeToBlue 2s;
     background: $primary-blue;
     span {
       color: #fff;
     }
   }
 }
-@keyframes revealText {
+#contact-dock {
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  border-top: 1px solid $dark-navy-blue;
+}
+@keyframes fadeToBlue {
   from {
-    height: 20rem;
+    background: $page-white;
   }
   to {
-    height: 100%;
+    background: $primary-blue;
   }
 }
+.show {
+  #contact,
+  #hold {
+    &:hover {
+      background: transparent;
+    }
+  }
+}
+
 .overlay {
   text-transform: uppercase;
   text-align: center;
@@ -104,9 +153,11 @@ footer {
   position: fixed;
   top: 0;
   z-index: 9;
-  // pointer-events: none;
   background-color: $primary-blue;
   mix-blend-mode: multiply;
+  animation: fadeToBlue 1s;
+}
+.blur-content {
   filter: blur(5px);
   -webkit-filter: blur(5px);
 }

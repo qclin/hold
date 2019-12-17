@@ -2,10 +2,10 @@
   position: relative;
   top: -12px;
   padding: 3px;
-  background: $off-white;
+  background: $pale;
   margin: 0 0.2rem 0 0.1rem;
   cursor: pointer;
-  color: $brownish-grey;
+  color: $dark-navy-blue;
 }
 
 .annotations {
@@ -15,8 +15,7 @@
   &.wide {
     width: 50rem;
   }
-  cursor: crosshair;
-  background: $off-white;
+  background: $pale;
   opacity: 1 !important;
   &:hover {
     visibility: visible !important;
@@ -24,14 +23,14 @@
   }
 }
 .__react_component_tooltip.type-light {
-  background: $off-white !important;
+  background: $pale !important;
 }
 .expand-arrow {
   position: absolute;
-  bottom: 0;
-  right: 5px;
+  bottom: 2rem;
+  right: 2rem;
   cursor: pointer;
   &:hover {
-    background: $off-white;
+    background: $pale;
   }
 }

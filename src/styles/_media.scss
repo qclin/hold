@@ -1,4 +1,7 @@
 @media (min-width: 768px) {
+  .side-bar {
+    display: block;
+  }
   .tag-panel {
     display: block;
     padding-left: 4em;
@@ -7,15 +10,18 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    height: 650px;
+    height: 70vh;
     margin: 6.5rem auto;
+  }
+  .project-description {
+    display: block;
   }
   .text-box {
     min-width: 300px;
     position: absolute;
     box-shadow: 2px 2px 4px grey;
     margin: 1rem;
-    p.measure {
+    p {
       display: block;
     }
     &.even {
@@ -39,11 +45,6 @@
     }
   }
 
-  #about.scroll {
-    .content {
-      height: 20rem;
-    }
-  }
   #project-section {
     padding-bottom: 20em;
   }
@@ -86,19 +87,61 @@
   }
   footer {
     &.showContact {
-      transition: 0.5s;
+      transition: 1s;
       height: 300px;
     }
   }
 }
 
+@media (min-width: 768px) {
+  #about.scroll {
+    .content {
+      height: 12rem;
+    }
+  }
+  #about.open {
+    height: 80vh;
+  }
+}
+// laptop
+@media (min-width: 1024px) {
+  #about.scroll {
+    .content {
+      height: 26.5rem;
+    }
+  }
+  #about.open {
+    height: 100vh;
+  }
+}
+
+// Large - laptop
+@media (min-width: 1440px) {
+  #about.open {
+    height: 80vh;
+  }
+}
+
+// 4k screen
+@media (min-width: 2560px) {
+}
+
 @media (max-width: 768px) {
+  #about.open {
+    height: 100vh;
+  }
   #collapse {
     display: none;
   }
   #back,
   #hold {
     display: block;
+  }
+  #back {
+    height: 3rem;
+    width: 3rem;
+    top: 1.5rem;
+    left: 1.5rem;
   }
   #about {
     &.open,
@@ -114,12 +157,10 @@
   }
   .project-preview {
     .text-box {
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
-
-      top: -2rem;
       position: relative;
-      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
     }
+  }
+  .address {
+    margin-top: 5rem;
   }
 }

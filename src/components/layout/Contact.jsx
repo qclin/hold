@@ -11,8 +11,10 @@ export default function Contact(props) {
         onClick={() => handleContactToggle(true)}
         className={styles + ' label'}
       >
-        <span>CONTACT</span>
-        <div id="contact">
+        <div id="contact-dock">
+          <span>CONTACT</span>
+        </div>
+        <div id="contact" className="pa4">
           <div className="fl w-100 w-50-ns">
             Get in touch <br />
             hello [at] theholding.page <br />
@@ -21,7 +23,7 @@ export default function Contact(props) {
               Newsletter
             </a>
           </div>
-          <div className="fr w-100 w-20-ns mt5">
+          <div className="fr w-100 w-40-ns address">
             + 49 178 1882094
             <br />
             Harzer Straße 33

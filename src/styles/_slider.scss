@@ -1,28 +1,3 @@
-.awssld {
-  --organic-arrow-thickness: 1px !important;
-  --organic-arrow-height: 5rem !important;
-  --organic-arrow-color: #ffffff !important;
-  --loader-bar-color: $off-white !important;
-  --loader-bar-height: 2px !important;
-}
-
-.awssld__controls__arrow-left:before,
-.awssld__controls__arrow-right:after {
-  transform: rotate(30deg) !important;
-}
-
-.awssld__controls__arrow-left:after,
-.awssld__controls__arrow-right:before {
-  transform: rotate(-30deg) !important;
-}
-
-.awssld__content {
-  img,
-  video {
-    top: 50% !important;
-  }
-}
-
 .slick-prev {
   left: 7%;
 }
@@ -46,8 +21,8 @@
   text-align: center;
 }
 .slick-prev:before {
-  content: url('../public/icons/prev.svg');
+  content: url('../public/icons/prev.svg') !important;
 }
 .slick-next:before {
-  content: url('../public/icons/next.svg');
+  content: url('../public/icons/next.svg') !important;
 }
