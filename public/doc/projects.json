@@ -10,24 +10,12 @@
       "details": { "intro": "" },
       "images": [
         {
-          "name": "Mountains-highest-point-4",
-          "path": "/images/projects/alianza/Mountains-highest-point-4.JPG"
+          "name": "Practice of sustainable tree felling in the cooperative of Juan Sabines. Diego Manzano, 2019",
+          "path": "/images/home/Alianza_01.jpg"
         },
         {
-          "name": "Paxtle-trees-1 Paxtle-trees-1",
-          "path": "/images/projects/alianza/Paxtle-trees-1.JPG"
-        },
-        {
-          "name": "Paxtle-trees-7",
-          "path": "/images/projects/alianza/Paxtle-trees-7.JPG"
-        },
-        {
-          "name": "Mountains-highest-point3 Mountains-highest-point3",
-          "path": "/images/projects/alianza/Mountains-highest-point3.JPG"
-        },
-        {
-          "name": "Trabajo-grass-mound.JPG",
-          "path": "/images/projects/alianza/Trabajo-grass-mound.JPG"
+          "name": "Regional vegetation of Chiapas within the Mesoamerican forest. Andrea Macias-Yanez, 2019.",
+          "path": "/images/home/Alianza_02.jpg"
         }
       ]
     },
@@ -43,12 +31,20 @@
       },
       "images": [
         {
-          "name": "ocean archive   john akomfrah ‘purple’  still, co-commissed by TBA21 — Academy",
-          "path": "/images/projects/ocean-archive/Akomfrah_Purple_2017_Video still_SDF_10.jpg"
+          "name": "Istituto delle Scienze Marine Venice, historical algal collection. Henning Brümmer, 2019.",
+          "path": "/images/home/OA_01.jpg"
         },
         {
-          "name": "ocean archive   john akomfrah ‘purple’  still, co-commissed by TBA21 — Academy",
-          "path": "/images/projects/ocean-archive/Akomfrah_Purple_2017_Video still_SDF_15.jpg"
+          "name": "Search results from aggregated digital archives from various institutions on ocean research.",
+          "path": "/images/home/OA_02.jpg"
+        },
+        {
+          "name": "Geolocated search results highlighting a variety of media formats.",
+          "path": "/images/home/OA_03.jpg"
+        },
+        {
+          "name": "A view of an active user’s collection of archival items.",
+          "path": "/images/home/OA_04.jpg"
         }
       ]
     },
@@ -117,60 +113,21 @@
         ]
       },
       "accreditation": "Finally we would like to thank MSF for the trust and patient — particularly our product owner Lucie for her active engagement and openness to adopt to our iteration process. Also we would like to give recognition to Across the Cloud for the continuous support, and mentorship. ",
-
       "images": [
         {
-          "name": "msf reach impacted communities in indonesia",
-          "path": "/images/projects/msf-reach/IMG_3579.JPG"
+          "name": "Initial user testing of disaster report cards before UX redesign.",
+          "path": "/images/home/MSF_01.jpg"
         },
         {
-          "name": "ui-ux-03",
-          "path": "/images/projects/msf-reach/process/MSF_UIUX_Page_03.jpg"
-        },
-        {
-          "name": "functional-components",
-          "path": "/images/projects/msf-reach/process/MSF_UIUX_Page_07.jpg"
-        },
-        {
-          "name": "event-page",
-          "path": "/images/projects/msf-reach/design/MSF_Styleguide18.jpg"
-        },
-        {
-          "name": "event-notifications",
-          "path": "/images/projects/msf-reach/design/MSF_Styleguide22.jpg"
-        },
-        {
-          "name": "event-creation",
-          "path": "/images/projects/msf-reach/design/MSF_Styleguide51.jpg"
-        },
-        {
-          "name": "event-sitrep",
-          "path": "/images/projects/msf-reach/design/MSF_Styleguide46.jpg"
-        },
-        {
-          "name": "event-resource-edit-view",
-          "path": "/images/projects/msf-reach/design/MSF_Styleguide42.jpg"
-        },
-        {
-          "name": "ui-components",
-          "path": "/images/projects/msf-reach/process/MSF_Styleguide5.jpg"
-        },
-
-        {
-          "name": "navigation-component",
-          "path": "/images/projects/msf-reach/process/MSF_Styleguide6.jpg"
-        },
-
-        {
-          "name": "multiple-screens",
-          "path": "/images/projects/msf-reach/process/MSF_Styleguide17.jpg"
+          "name": "New UI interface of event reporting.",
+          "path": "/images/home/MSF_02.jpg"
         }
       ]
     },
 
     {
       "id": 3,
-      "name": "GCATG",
+      "name": "Your Flight is Cancelled",
       "date": "2017",
       "brief": "A website launched in parallel with e-flux’s Your Flight is Cancelled window display at NICC Brussels tells a tale of the end of a fictional art travel agency.",
       "blurb": "Launched in parallel with e-flux’s Your Flight is Cancelled window display at NICC Brussels, the website tells a tale of the end of a fictional art travel agency sparked by political turmoil pertaining to the systematic breakage of borders. In this world exists the dissolution of the European Union, the unilateral suspension of visa and banking agreements by the United States, and instituting of military dictatorships throughout Latin American among other events. Initiated with a bankruptcy notice and closure of all art festivals, the aesthetic logic is modelled after a vacation booking site mixed in with idea of deterioration: random bits of scattered information organized loosely next to suspicious links and broken images.",
@@ -178,8 +135,12 @@
       "details": { "intro": "" },
       "images": [
         {
-          "name": "Flight emergency instructions",
-          "path": "/images/projects/gcatg/EMERGENCY-1-small.jpg"
+          "name": "Airplane emergency landing card, as part of the visuals collected for ‘Your Flight is Cancelled’.",
+          "path": "/images/home/GCATG_01.jpg"
+        },
+        {
+          "name": "Breaking news from ‘Your Flight is Cancelled’ announcing fictional bankruptcy.",
+          "path": "/images/home/GCATG_02.jpg"
         }
       ]
     },
@@ -193,24 +154,12 @@
       "details": { "intro": "" },
       "images": [
         {
-          "name": "Ziggy on the Land of Drunken Trees Anne Duk Hee Jordan 14.09.2018 Galerie Wedding",
-          "path": "/images/projects/anne-duk-hee/_KOS0294.jpg"
+          "name": "‘Ziggy and the Starfish’. Anne Duk Hee Jordan, 2019.",
+          "path": "/images/home/ADH_01.jpg"
         },
         {
-          "name": "Clams",
-          "path": "/images/projects/anne-duk-hee/_DSC7001.jpg"
-        },
-        {
-          "name": "Ziggy on the Land of Drunken Trees Anne Duk Hee Jordan 14.09.2018 Galerie Wedding",
-          "path": "/images/projects/anne-duk-hee/ziggy.jpg"
-        },
-        {
-          "name": "dont laugh(i luv you)",
-          "path": "/images/projects/anne-duk-hee/dont laugh(i luv you).jpg"
-        },
-        {
-          "name": "Atlas",
-          "path": "/images/projects/anne-duk-hee/Atlas.JPG"
+          "name": "In-progress collage for interactive home-page.",
+          "path": "/images/home/ADH_02.jpg"
         }
       ]
     }

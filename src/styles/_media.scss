@@ -55,14 +55,6 @@
     display: none;
   }
 
-  .image-wrapper {
-    img {
-      width: auto !important;
-      display: block;
-      height: -webkit-fill-available;
-    }
-  }
-
   .show-prev {
     .slick-next {
       display: none !important;
@@ -74,10 +66,10 @@
     }
   }
   .slick-prev {
-    left: -7%;
+    left: -68px;
   }
   .slick-next {
-    right: -4%;
+    right: -40px;
   }
 
   .slick-prev,
@@ -99,9 +91,6 @@
       height: 12rem;
     }
   }
-  #about.open {
-    height: 80vh;
-  }
 }
 // laptop
 @media (min-width: 1024px) {
@@ -118,7 +107,16 @@
 // Large - laptop
 @media (min-width: 1440px) {
   #about.open {
-    height: 80vh;
+    height: 85vh;
+  }
+
+  @keyframes dropHeight {
+    from {
+      height: 30rem;
+    }
+    to {
+      height: 85vh;
+    }
   }
 }
 

@@ -6,13 +6,13 @@ import 'slick-carousel/slick/slick-theme.css';
 export default function ImageCarousel({ images, onLeft }) {
   const settings = {
     infinite: true,
-    speed: 2000,
+    speed: 1000,
+    lazyLoad: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    lazyLoad: true,
-    centerPadding: '50px',
-    cssEase: 'ease'
+    centerPadding: '50px'
   };
+
   return (
     <div
       className={
@@ -24,7 +24,15 @@ export default function ImageCarousel({ images, onLeft }) {
       <div className="teal-overlay"></div>
       <Slider {...settings}>
         {images.map((image, index) => (
-          <img src={image.path} key={index} />
+          <div>
+            <figure>
+              <img src={image.path} key={index} />
+            </figure>
+            <figcaption className="caption">
+              <img src="/icons/caption-arrow.svg" />
+              {image.name}
+            </figcaption>
+          </div>
         ))}
       </Slider>
     </div>

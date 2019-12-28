@@ -1,5 +1,6 @@
 .product {
   background: $off-white;
+  padding: 0 0.3rem;
   &:hover {
     background: $greenish-cyan;
   }
@@ -8,7 +9,8 @@
 
 .client {
   // in pink
-  text-decoration: underline wavy blue;
+  text-decoration: blue wavy underline;
+  text-decoration-thickness: 0.6px;
 
   &:hover {
     background: $bright-magenta;

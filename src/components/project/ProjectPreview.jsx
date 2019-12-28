@@ -21,7 +21,11 @@ export default function ProjectPreview({ model, index }) {
       <div className="w-100 w-30-ns text-box-wrapper">
         <div className={isEven ? 'even text-box' : 'odd text-box'}>
           <h3 className="ma0 project-title">{model.name}</h3>
-          <p className={showText ? 'show' : 'project-description'}>
+          <p
+            className={
+              showText ? 'show project-description' : 'hide project-description'
+            }
+          >
             {model.brief}
           </p>
           <div className="my1 number time-stamp">✺ {model.date}</div>

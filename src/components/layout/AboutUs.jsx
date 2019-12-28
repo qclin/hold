@@ -26,15 +26,16 @@ export default function AboutUs(props) {
               {!isScroll && <img src="./icons/black-copy@3x.png" />}
             </span>
             <p>
-              Hold <Annotation id={1} key={1} footnote={footnotes[0]} />{' '}
-              develops support systems for political and social practices
-              engaged in durable futures.
+              Hold
+              <Annotation id={1} key={1} footnote={footnotes[0]} /> develops
+              support systems for political and social practices engaged in
+              durable futures.
             </p>
 
             <p>
               As a design studio we frame our methodology through close dialogue
-              with our clients
-              <Annotation id={2} key={2} footnote={footnotes[1]} isMark />. We
+              with our clients.
+              <Annotation id={2} key={2} footnote={footnotes[1]} isMark /> We
               work with individuals, alliances and institutions who either are
               in need of visibility, alternative organizational structures or
               engaged in their own practice. Hold is available for design and
@@ -53,7 +54,7 @@ export default function AboutUs(props) {
               experimenting with reconfiguration
               <Annotation id={5} key={5} footnote={footnotes[4]} isMark /> we
               nurture dialogues that enable multiple ways of organizing,
-              structuring and designing.{' '}
+              structuring and designing.
             </p>
             <div class="mobile footnotes">
               {footnotes.map((note, index) => (

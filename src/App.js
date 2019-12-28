@@ -15,7 +15,7 @@ function App() {
       <div className="content">
         <Sidebar side="left" />
         <Sidebar side="right" />
-        <Suspense fallback={<em>Loading...</em>}>
+        <Suspense fallback={<em>Hold on...</em>}>
           <Router>
             <Dynamic path="dynamic" />
             <Routes path="*" />

@@ -14,7 +14,7 @@ export default function Contact(props) {
         <div id="contact-dock">
           <span>CONTACT</span>
         </div>
-        <div id="contact" className="pa4">
+        <div id="contact" className="ma4">
           <div className="fl w-100 w-50-ns">
             Get in touch <br />
             hello [at] theholding.page <br />

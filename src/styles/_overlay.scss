@@ -81,6 +81,7 @@ footer {
     height: 100%;
   }
 }
+
 @keyframes revealText {
   from {
     opacity: 0;
@@ -93,7 +94,6 @@ footer {
 #about.scroll {
   position: relative;
   height: 30rem;
-
   .content {
     height: 20rem;
     overflow: hidden;
