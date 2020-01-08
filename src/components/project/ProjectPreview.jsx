@@ -28,7 +28,12 @@ export default function ProjectPreview({ model, index }) {
             : 'odd w-100 w-30-ns text-box-wrapper'
         }
       >
-        <div className="text-box">
+        <div
+          className="text-box"
+          onClick={() => {
+            setShowText(!showText);
+          }}
+        >
           <h3 className="ma0 project-title">{model.name}</h3>
           <p
             className={
@@ -40,9 +45,7 @@ export default function ProjectPreview({ model, index }) {
           <div className="my1 number time-stamp">✺ {model.date}</div>
           <p
             className={
-              showText
-                ? 'expand project-tag-wrapper'
-                : 'project-tag-wrapper ma0'
+              showText ? 'expand project-tag-wrapper' : 'project-tag-wrapper'
             }
           >
             <hr />
@@ -52,12 +55,7 @@ export default function ProjectPreview({ model, index }) {
               ))}
             </div>
           </p>
-          <span
-            className="expand-arrow mobile"
-            onClick={() => {
-              setShowText(!showText);
-            }}
-          >
+          <span className="expand-arrow mobile">
             {!showText ? (
               <img src="/icons/txt-expand.svg" />
             ) : (

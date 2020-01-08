@@ -32,7 +32,7 @@ export default () => {
           }
         }}
       ></div>
-      <div className={blurContext ? 'blur-content fl w-100' : 'fl w-100'}>
+      <div className={blurContext && 'blur-content'}>
         <div id="project-section">
           {projects.map((project, index) => (
             <ProjectPreview model={project} key={project.id} index={index} />

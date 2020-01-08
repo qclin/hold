@@ -8,7 +8,7 @@ export default function Contact(props) {
   return (
     <>
       <footer
-        onClick={() => handleContactToggle(true)}
+        onClick={() => handleContactToggle(!contactOn)}
         className={styles + ' label'}
       >
         <div id="contact-dock">

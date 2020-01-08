@@ -59,12 +59,15 @@
   #project-section {
     margin: 0 2.2rem;
   }
+  .project-preview:first-of-type {
+    margin-top: 6.5rem;
+  }
   .project-preview {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     height: 70vh;
-    margin: 6.5rem auto;
+    margin-bottom: 6.5rem;
   }
 
   #about.scroll {
@@ -98,6 +101,10 @@
 }
 
 @media (max-width: 768px) {
+  p.project-description.expand {
+    margin-bottom: 1.2rem;
+  }
+
   .text-box {
     max-width: 100%;
   }
@@ -122,6 +129,7 @@
     &.scroll {
       .content {
         margin-top: 55px;
+        padding-bottom: 8rem;
       }
     }
   }
@@ -140,6 +148,10 @@
     opacity: 0;
     height: 0;
     overflow: hidden;
+  }
+
+  .project-tag-wrapper {
+    margin: 0;
   }
 
   .expand {

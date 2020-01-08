@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { useRouteData } from 'react-static';
 import Annotation, { renderImage, renderMark } from './Annotation';
 
@@ -6,6 +6,8 @@ export default function AboutUs(props) {
   const { footnotes } = useRouteData();
   const { type, handleAboutToggle, showNav } = props;
   const isScroll = type == 'scroll';
+  const aboutRef = useRef(null);
+
   return (
     <>
       <nav
@@ -16,14 +18,22 @@ export default function AboutUs(props) {
         <span className="label">STUDIO HOLD</span>
       </nav>
       <div id="about" className={type}>
-        <div className="content">
+        <div className="content" ref={aboutRef}>
           <div className="w-100 w-80-ns measure-wide">
+            <span id="holder"></span>
             <span
               id="back"
               className="fixed"
-              onClick={() => handleAboutToggle(false)}
+              onClick={() => {
+                handleAboutToggle(false);
+                aboutRef.current.scrollTo(0, 0);
+              }}
             >
-              {!isScroll && <img src="./icons/black-copy@3x.png" />}
+              {!isScroll && (
+                <a href="#hold">
+                  <img src="./icons/black-copy@3x.png" />
+                </a>
+              )}
             </span>
             <p>
               Hold
