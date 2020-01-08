@@ -27,8 +27,8 @@ export default function Annotation(props) {
         delayHide={500}
         className={wide ? 'annotations wide' : 'annotations'}
       >
-        {isMark ? renderMark(footnote.text) : footnote.text}
         {footnote.images && footnote.images.map(image => renderImage(image))}
+        {isMark ? renderMark(footnote.text) : footnote.text}
       </ReactTooltip>
     </>
   );

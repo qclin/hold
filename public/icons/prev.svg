@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="56px" height="163px" viewBox="0 0 56 163" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="45px" height="130px" viewBox="0 0 45 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
-    <title>Arrow Image Carousel Copy</title>
+    <title>prev</title>
     <desc>Created with Sketch.</desc>
-    <g id="NEW" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="MSF-/-Hoverover-on-Studio-Hold" transform="translate(-989.000000, -432.000000)" stroke="#000217">
-            <g id="Arrow-Image-Carousel-Right" style="mix-blend-mode: exclusion;" transform="translate(1019.000000, 514.000000) scale(-1, -1) translate(-1019.000000, -514.000000) translate(985.000000, 428.000000)">
-                <polyline id="Path-2" points="9 5 63 87.6478873 9 168"></polyline>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="prev" transform="translate(1.000000, 0.000000)" stroke="#000217">
+            <g id="Arrow-Image-Carousel-Right" style="mix-blend-mode: exclusion;" transform="translate(21.533742, 65.000000) rotate(180.000000) translate(-21.533742, -65.000000) ">
+                <polyline id="Path-2" points="0 0 43.0674847 65.9154929 0 130"></polyline>
             </g>
         </g>
     </g>

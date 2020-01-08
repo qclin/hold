@@ -19,8 +19,11 @@ footer {
   background: $page-white;
   border-top: 1px solid $dark-navy-blue;
   &.showContact {
-    height: 75vh;
+    height: auto;
     background: $page-white;
+    &.show {
+      padding-bottom: 8rem;
+    }
   }
 }
 #hold,
@@ -31,12 +34,17 @@ footer {
     }
   }
 }
+
+#contact {
+  margin: 40px 20px;
+}
 #openAbout {
   bottom: 1rem;
   right: 2rem;
   cursor: pointer;
 }
 #about {
+  transition: height 1s linear;
   border-bottom: 1px solid $dark-navy-blue;
   .content {
     display: none;
@@ -60,7 +68,7 @@ footer {
   z-index: 20;
   height: 100vh;
   background: $page-white;
-  animation: dropHeight 2s;
+  animation: dropHeight 1s;
 
   .content {
     position: relative;
@@ -95,7 +103,7 @@ footer {
   position: relative;
   height: 30rem;
   .content {
-    height: 20rem;
+    height: 22rem;
     overflow: hidden;
     margin-bottom: 10em;
   }

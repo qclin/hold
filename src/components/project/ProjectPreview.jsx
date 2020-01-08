@@ -15,21 +15,36 @@ export default function ProjectPreview({ model, index }) {
   return (
     <div className="project-preview">
       {(isEven || !isDesktop) && [
-        <div className="w-10"></div>,
-        <ImageCarousel images={model.images} onLeft={isEven} />
+        <ImageCarousel
+          images={model.images}
+          onLeft={isEven}
+          expanded={showText}
+        />
       ]}
-      <div className="w-100 w-30-ns text-box-wrapper">
-        <div className={isEven ? 'even text-box' : 'odd text-box'}>
+      <div
+        className={
+          isEven
+            ? 'even w-100 w-30-ns text-box-wrapper'
+            : 'odd w-100 w-30-ns text-box-wrapper'
+        }
+      >
+        <div className="text-box">
           <h3 className="ma0 project-title">{model.name}</h3>
           <p
             className={
-              showText ? 'show project-description' : 'hide project-description'
+              showText ? 'expand project-description' : 'project-description'
             }
           >
             {model.brief}
           </p>
           <div className="my1 number time-stamp">✺ {model.date}</div>
-          <p className={showText ? 'show' : 'ma0'}>
+          <p
+            className={
+              showText
+                ? 'expand project-tag-wrapper'
+                : 'project-tag-wrapper ma0'
+            }
+          >
             <hr />
             <div className="tag-wrapper">
               {projectTags.map(tag => (
@@ -51,7 +66,9 @@ export default function ProjectPreview({ model, index }) {
           </span>
         </div>
       </div>
-      {!isEven && isDesktop && <ImageCarousel images={model.images} />}
+      {!isEven && isDesktop && (
+        <ImageCarousel images={model.images} expanded={showText} />
+      )}
     </div>
   );
 }

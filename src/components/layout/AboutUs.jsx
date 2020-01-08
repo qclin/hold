@@ -27,9 +27,9 @@ export default function AboutUs(props) {
             </span>
             <p>
               Hold
-              <Annotation id={1} key={1} footnote={footnotes[0]} /> develops
-              support systems for political and social practices engaged in
-              durable futures.
+              <Annotation id={1} key={1} footnote={footnotes[0]} isMark />{' '}
+              develops support systems for political and social practices
+              engaged in durable futures.
             </p>
 
             <p>
@@ -59,7 +59,7 @@ export default function AboutUs(props) {
             <div class="mobile footnotes">
               {footnotes.map((note, index) => (
                 <div id={`footnote-${note.id}`}>
-                  <span className="bg-off-white pa1">{note.id}</span>
+                  <span className="bg-pale pa1">{note.id}</span>
                   {renderMark(note.text)}
                   {note.images && note.images.map(img => renderImage(img))}
                 </div>

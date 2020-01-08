@@ -6,24 +6,24 @@
     },
     {
       "id": 2,
-      "text": "- Michel Serres, The Natural Contract\n\r- [Masanobu Fukuoka](https://en.wikipedia.org/wiki/Masanobu_Fukuoka)\n\r- [IPCC Report](https://www.ipcc.ch/site/assets/uploads/2019/08/3.-Summary-of-Headline-Statements.pdf) \n\r- [Climate Adaption Australia](https://climateadaptationaustralia.com.au/)"
+      "text": "Inspired by Masanobu Fukuoka, whose non-invasive farming philosophy is based on close observation of ecosystems.",
+      "images": ["/images/footnotes/masanobu-fukuoka.jpg"]
     },
     {
       "id": 3,
-      "text": "[Definition of **support**](https://dictionary.cambridge.org/dictionary/english/support)",
+      "text": "**support** [verb] to agree with and give encouragement to someone or something because you want him, her, they or it to succeed.",
       "images": [
-        "/images/footnotes/Relationships-of-the-conceptualization-of-agroecology-science-movement-and-practice.png",
-        "/images/footnotes/Altieri-agroecology-NRMfinal.pdf"
+        "/images/footnotes/Relationships-of-the-conceptualization-of-agroecology-science-movement-and-practice.png"
       ]
     },
     {
       "id": 4,
-      "text": "'...classifications are hierarchical, and prescribe a universalizing structure of `first terms` that masquerade as neutral when they are, in fact, culturally informed and reflective of social power.'  \r\n  *Teaching the Radical Catalog, Emily Drabinski*"
+      "text": "\"...classifications are hierarchical, and prescribe a universalizing structure of \"first terms\" that masquerade as neutral when they are, in fact, culturally informed and reflective of social power.\"  \r\n  *Teaching the Radical Catalog, Emily Drabinski*"
     },
     {
       "id": 5,
-      "text": "'I use this model to generate new imaginary words that exist in the negative phonetic spaces between the phonetic hidden states', \r\n *Compasses Allison Parrish* \r\n",
-      "images": ["/images/footnotes/190705ap_sync2_27_compasses.pdf"]
+      "text": "Allison Parrish on  her poems in [Compasses](http://portfolio.decontextualize.com/)  \"I use this model to generate new imaginary words that exist in the negative phonetic spaces between the phonetic hidden states\"",
+      "images": ["/images/footnotes/allison-simple.jpeg"]
     }
   ]
 }

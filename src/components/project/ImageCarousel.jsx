@@ -3,29 +3,28 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-export default function ImageCarousel({ images, onLeft }) {
+export default function ImageCarousel({ images, onLeft, expanded }) {
   const settings = {
     infinite: true,
     speed: 1000,
-    lazyLoad: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     centerPadding: '50px'
   };
-
+  const displayStyle = expanded
+    ? 'expanded w-100 w-70-ns image-wrapper'
+    : 'w-100 w-70-ns image-wrapper';
   return (
     <div
       className={
-        onLeft
-          ? 'show-prev w-100 w-60-ns image-wrapper'
-          : 'show-next w-100 w-60-ns image-wrapper'
+        onLeft ? `show-prev ${displayStyle}` : `show-next ${displayStyle}`
       }
     >
-      <div className="teal-overlay"></div>
       <Slider {...settings}>
         {images.map((image, index) => (
           <div>
             <figure>
+              {index == 0 && <div className="teal-overlay"></div>}
               <img src={image.path} key={index} />
             </figure>
             <figcaption className="caption">

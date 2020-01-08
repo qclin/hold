@@ -14,14 +14,16 @@ export default function Contact(props) {
         <div id="contact-dock">
           <span>CONTACT</span>
         </div>
-        <div id="contact" className="ma4">
+        <div id="contact">
           <div className="fl w-100 w-50-ns">
             Get in touch <br />
             hello [at] theholding.page <br />
             for collaborations, commissions or a simple hello 🌞 <br />
-            <a href="https://tinyletter.com/StudioHold" target="_blank">
-              Newsletter
-            </a>
+            <p>
+              <a href="https://tinyletter.com/StudioHold" target="_blank">
+                Sign up to our Newsletter
+              </a>
+            </p>
           </div>
           <div className="fr w-100 w-40-ns address">
             + 49 178 1882094

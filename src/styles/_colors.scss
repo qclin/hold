@@ -23,20 +23,13 @@ $pale: #fffbce;
   color: $txt-gray;
 }
 
-nav {
-  &:hover {
-    cursor: pointer;
-    background: $off-white;
-  }
-}
-
 body,
 nav,
 .text-box {
   background: $page-white;
 }
-.bg-off-white {
-  background: $off-white;
+.bg-pale {
+  background: $pale;
 }
 .teal-overlay {
   mix-blend-mode: color;

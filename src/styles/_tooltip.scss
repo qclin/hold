@@ -10,8 +10,11 @@
 
 .annotations {
   pointer-events: auto !important;
-  width: 21.25rem;
+  width: 16rem;
   max-width: 80%;
+  a {
+    text-decoration: underline;
+  }
   &.wide {
     width: 50rem;
   }
@@ -27,10 +30,7 @@
 }
 .expand-arrow {
   position: absolute;
-  bottom: 2rem;
-  right: 2rem;
+  bottom: 1rem;
+  right: 1rem;
   cursor: pointer;
-  &:hover {
-    background: $pale;
-  }
 }

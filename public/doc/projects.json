@@ -10,6 +10,10 @@
       "details": { "intro": "" },
       "images": [
         {
+          "name": "Regional vegetation of Chiapas within the Mesoamerican forest. Andrea Macias-Yanez, 2019.",
+          "path": "/images/home/Alianza_00.jpg"
+        },
+        {
           "name": "Practice of sustainable tree felling in the cooperative of Juan Sabines. Diego Manzano, 2019",
           "path": "/images/home/Alianza_01.jpg"
         },
@@ -23,9 +27,9 @@
       "id": 1,
       "name": "Ocean Archive",
       "date": "2018-2019",
-      "brief": "A website as online ‘living’ archive, the Ocean Archive aims to promote research, discoverability and collaborative multidisciplinary dialogue over the current state of the ocean. ",
+      "brief": "A website as online ‘living’ archive, the Ocean Archive aims to promote research, discoverability and collaborative multidisciplinary dialogue over the current state of the ocean. Commissioned by TBA21-Academy, development in collaboration with Across the Cloud.",
       "blurb": "The Ocean Archive is an on-going ‘living’ archive with the aim to promote research, discoverability and collaborative multidisciplinary dialogue over the current state of the ocean. Initiated by TBA21-Academy, they have commissioned projects lead by artists, scientists and theorists to expand ocean understanding through the lens of art and science. We researched and prototyped a fluid archival infrastructure with the aim to create a web experience that generates plurality of perspectives - from datasets of a marine biologist to a filmmaker studying deep sea mining. ",
-      "tags": [1, 2, 8, 6, 11, 12, 23, 19],
+      "tags": [1, 2, 8, 6, 11, 12, 18, 22, 23, 19, 26],
       "details": {
         "intro": " The Ocean Archive is an on-going ‘living’ archive with the aim to promote research, discoverability and collaborative multidisciplinary dialogue over the current state of the ocean. Initiated by TBA21-Academy, they have commissioned projects lead by artists, scientists and theorists to expand ocean understanding through the lens of art and science. We researched and prototyped a fluid archival infrastructure with the aim to create a web experience that generates plurality of perspectives - from datasets of a marine biologist to a filmmaker studying deep sea mining. "
       },
@@ -52,7 +56,7 @@
       "id": 2,
       "name": "MSF REACH",
       "date": "2018-2019",
-      "brief": "A platform for a digital emergency unit established by MSF called Reaction Assessment Collaboration Hub (REACH) which provides support for real-time decision making during evolving epidemics in Asia. ",
+      "brief": "A platform for a digital emergency unit established by MSF called Reaction Assessment Collaboration Hub (REACH) which provides support for real-time decision making for logistical distribution during evolving epidemics in Southeast Asia. Development in collaboration with Across the Cloud and interface design with Paul Heinicker.",
       "blurb": "The international NGO Médecins Sans Frontières established a digital emergency response unit in 2018. With MSF REACH REaction Assessment Collaboration Hub they introduced a platform that is used by across MSF operation centers in Europe to oversee rapidly evolving emergencies in Asia and support effective decision for dispatching medical resource. A particular focus of the initiative is to combine internal reporting from ground operators with crowd-sourced information, e.g. instant messaging, social networking and RSS feeds, in real-time. We supported MSF to improve their response times in emergency situations and to enhance all information processing activities across the MSF REACH platform.",
       "tags": [9, 10, 14, 15, 16, 17, 18, 19, 20],
       "details": {
@@ -128,7 +132,7 @@
     {
       "id": 3,
       "name": "Your Flight is Cancelled",
-      "date": "2017",
+      "date": "2018",
       "brief": "A website launched in parallel with e-flux’s Your Flight is Cancelled window display at NICC Brussels tells a tale of the end of a fictional art travel agency.",
       "blurb": "Launched in parallel with e-flux’s Your Flight is Cancelled window display at NICC Brussels, the website tells a tale of the end of a fictional art travel agency sparked by political turmoil pertaining to the systematic breakage of borders. In this world exists the dissolution of the European Union, the unilateral suspension of visa and banking agreements by the United States, and instituting of military dictatorships throughout Latin American among other events. Initiated with a bankruptcy notice and closure of all art festivals, the aesthetic logic is modelled after a vacation booking site mixed in with idea of deterioration: random bits of scattered information organized loosely next to suspicious links and broken images.",
       "tags": [6, 26],
@@ -147,7 +151,7 @@
     {
       "id": 4,
       "name": "Anne Duk Hee Jordan",
-      "date": "2019",
+      "date": "2020",
       "brief": "A portfolio website for artist Anne Duk Hee Jordan that embodies the humorous extension of biological processes expressed in her sculptures and installations.",
       "blurb": "Anne Duk Hee Jordan opens up doors to an artistic universe where she, humorously creates romantic machines that mirror, extend or convert biological processes and chemical reactions between living organisms and dead material. In her work she explores the flow of energies, human constructs of time and memory, decay, death, her own identity and encounters between mankind and his environment. We will design an updated web experience of her work of the last 10 years.",
       "tags": [6, 7, 21, 26],

@@ -1,3 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="56" height="163" viewBox="0 0 56 163">
-    <path fill="none" fill-rule="evenodd" stroke="#000217" d="M1 0l54 82.648L1 163"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="130px" viewBox="0 0 45 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>next</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="next" transform="translate(1.000000, 0.000000)" stroke="#000217">
+            <polyline id="Path" points="0 0 43.0674847 65.9155828 0 130"></polyline>
+        </g>
+    </g>
 </svg>

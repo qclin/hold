@@ -1,13 +1,16 @@
+.slick-next {
+  right: 7%;
+}
 .slick-prev {
   left: 7%;
 }
-.slick-next {
-  right: 4%;
-}
 
+.slick-next,
+.slick-prev {
+  height: 130px !important;
+}
 .slick-prev,
 .slick-next {
-  height: 163px;
   transform: scale(0.5) translate(0, -100%);
   -webkit-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.7));
   filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.7));
@@ -15,15 +18,10 @@
 .slick-slider,
 .slick-track {
   height: 100%;
+  line-height: 0;
 }
 .slick-list {
   text-align: center;
-}
-.slick-prev:before {
-  content: url('../public/icons/prev.svg') !important;
-}
-.slick-next:before {
-  content: url('../public/icons/next.svg') !important;
 }
 
 .image-wrapper {
@@ -33,6 +31,122 @@
     &.slick-active,
     .slick-current {
       opacity: 1;
+      figcaption {
+        opacity: 1;
+      }
+    }
+  }
+}
+// Desktop
+@media (min-width: 768px) {
+  .slick-prev,
+  .slick-next {
+    width: 54px;
+    transform: scale(1) translate(0, -50%);
+  }
+  .slick-prev:before {
+    content: url('../public/icons/prev.svg') !important;
+  }
+  .slick-next:before {
+    content: url('../public/icons/next.svg') !important;
+  }
+  .show-prev {
+    .slick-next {
+      display: none !important;
+    }
+  }
+  .slick-prev {
+    left: -68px !important;
+  }
+  .slick-next {
+    right: -68px !important;
+  }
+  .show-next {
+    margin-right: 5rem;
+    .slick-prev {
+      display: none !important;
+    }
+  }
+}
+
+// mobile
+@media (max-width: 768px) {
+  .slick-next:before {
+    display: none;
+  }
+  .expanded {
+    .slick-next:before {
+      display: block;
+      content: url('../public/icons/mobile.svg') !important;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  figcaption {
+    display: none;
+  }
+}
+@media (min-width: 1025px) {
+  .show-prev {
+    margin-left: 5rem;
+  }
+  .show-next {
+    margin-right: 5rem;
+  }
+  .even {
+    .text-box {
+      left: -7vw;
+    }
+  }
+  .odd {
+    .text-box {
+      right: -7vw;
+    }
+  }
+  figcaption {
+    display: block;
+  }
+  .teal-overlay {
+    height: calc(100% - 38px);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .slick-prev,
+  .slick-next {
+    z-index: 10;
+  }
+  .slick-prev {
+    left: 1rem !important;
+  }
+  .slick-prev:before {
+    display: block;
+    content: url('../public/icons/mobile-prev.svg') !important;
+  }
+  .slick-next {
+    right: 1rem !important;
+  }
+  .slick-next:before {
+    display: block;
+    content: url('../public/icons/mobile.svg') !important;
+  }
+
+  .image-wrapper {
+    width: 100%;
+  }
+  .project-preview {
+    position: relative;
+    margin: 10.5rem auto;
+  }
+  .text-box-wrapper {
+    width: 40%;
+    position: absolute !important;
+    top: 30%;
+    &.even {
+      right: 2rem;
+    }
+    &.odd {
+      left: 2rem;
     }
   }
 }
