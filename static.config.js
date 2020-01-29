@@ -18,7 +18,7 @@ export default {
         }),
         children: projects.map(project => ({
           path: `/projects/${project.id}`,
-          template: 'src/containers/Project',
+          template: './src/containers/Project',
           getData: () => ({
             project
           })
@@ -57,7 +57,7 @@ export default {
     [
       require.resolve('react-static-plugin-sass'),
       {
-        includePaths: ['src/styles/']
+        includePaths: ['./src/styles/']
       }
     ],
     require.resolve('react-static-plugin-sitemap')

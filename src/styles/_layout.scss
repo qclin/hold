@@ -44,7 +44,14 @@
   color: $txt-gray;
   .image-wrapper,
   .text-box-wrapper {
-    position: relative;
+    position: absolute;
+
+    &.even {
+      right: -12%;
+    }
+    &.odd {
+      left: -12%;
+    }
   }
   .image-wrapper {
     figure {

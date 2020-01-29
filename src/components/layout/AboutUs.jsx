@@ -19,7 +19,7 @@ export default function AboutUs(props) {
       </nav>
       <div id="about" className={type}>
         <div className="content" ref={aboutRef}>
-          <div className="w-100 w-80-ns measure-wide">
+          <div className="w-100 w-75-ns measure-wide">
             <span id="holder"></span>
             <span
               id="back"

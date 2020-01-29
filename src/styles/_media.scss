@@ -98,6 +98,9 @@
 
 // 4k screen
 @media (min-width: 2560px) {
+  .measure-wide {
+    max-width: 1185px;
+  }
 }
 
 @media (max-width: 768px) {
