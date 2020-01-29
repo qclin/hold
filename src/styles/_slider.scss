@@ -17,8 +17,6 @@
 }
 .slick-slider,
 .slick-track {
-  width: 95%;
-  margin: 0 auto;
   height: 100%;
   line-height: 0;
 }
@@ -56,9 +54,6 @@
     content: url('../public/icons/next.svg') !important;
   }
   .show-prev {
-    .slick-slider {
-      margin-left: 5rem;
-    }
     .slick-next {
       display: none !important;
     }
@@ -70,18 +65,9 @@
     right: -68px !important;
   }
   .show-next {
-    .slick-slider {
-      margin-right: 5rem;
-    }
     .slick-prev {
       display: none !important;
     }
-  }
-  .image-wrapper img {
-    max-width: 80%;
-  }
-  .show-next img {
-    margin-left: 20%;
   }
 }
 
@@ -103,6 +89,13 @@
   }
 }
 @media (min-width: 1025px) {
+  .image-wrapper img {
+    max-width: 80%;
+  }
+  .show-next img {
+    margin-left: 20%;
+  }
+
   figcaption {
     display: block;
   }
@@ -141,7 +134,7 @@
   .text-box-wrapper {
     width: 40%;
     position: absolute !important;
-    top: 30%;
+    top: 10%;
     &.even {
       right: 2rem;
     }
