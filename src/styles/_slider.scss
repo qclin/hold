@@ -17,6 +17,8 @@
 }
 .slick-slider,
 .slick-track {
+  width: 95%;
+  margin: 0 auto;
   height: 100%;
   line-height: 0;
 }
@@ -25,6 +27,9 @@
 }
 
 .image-wrapper {
+  img {
+    max-width: 100%;
+  }
   .slick-slide {
     opacity: 0;
     transition: opacity 1s linear;
@@ -51,6 +56,9 @@
     content: url('../public/icons/next.svg') !important;
   }
   .show-prev {
+    .slick-slider {
+      margin-left: 5rem;
+    }
     .slick-next {
       display: none !important;
     }
@@ -59,13 +67,21 @@
     left: -68px !important;
   }
   .slick-next {
-    right: -44px !important;
+    right: -68px !important;
   }
   .show-next {
-    margin-right: 5rem;
+    .slick-slider {
+      margin-right: 5rem;
+    }
     .slick-prev {
       display: none !important;
     }
+  }
+  .image-wrapper img {
+    max-width: 80%;
+  }
+  .show-next img {
+    margin-left: 20%;
   }
 }
 
@@ -87,22 +103,6 @@
   }
 }
 @media (min-width: 1025px) {
-  .show-prev {
-    margin-left: 5rem;
-  }
-  .show-next {
-    margin-right: 5rem;
-  }
-  .even {
-    .text-box {
-      left: -7vw;
-    }
-  }
-  .odd {
-    .text-box {
-      right: -7vw;
-    }
-  }
   figcaption {
     display: block;
   }

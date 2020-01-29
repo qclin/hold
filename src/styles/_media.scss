@@ -1,4 +1,21 @@
 @media (min-width: 768px) {
+  .show-next .teal-overlay {
+    margin-left: 2.2%;
+  }
+
+  .project-preview {
+    .text-box-wrapper {
+      position: absolute;
+      top: 0;
+      &.even {
+        right: 24%;
+      }
+      &.odd {
+        left: 4%;
+      }
+    }
+  }
+
   .slick-slider .slick-track,
   .slick-slider .slick-list {
     line-height: 0;
@@ -25,13 +42,8 @@
     display: none;
   }
 
-  #about {
-    &.open,
-    &.scroll {
-      .content {
-        padding: 1rem 6rem;
-      }
-    }
+  #about .content {
+    padding: 1rem 6rem;
   }
 
   #collapse {
@@ -63,17 +75,11 @@
     margin-top: 6.5rem;
   }
   .project-preview {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    height: 70vh;
     margin-bottom: 6.5rem;
   }
 
-  #about.scroll {
-    .content {
-      height: 26.5rem;
-    }
+  #about {
+    height: 26.5rem;
   }
   #about.open {
     height: 100vh;

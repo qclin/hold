@@ -22,11 +22,7 @@ export default function ProjectPreview({ model, index }) {
         />
       ]}
       <div
-        className={
-          isEven
-            ? 'even w-100 w-30-ns text-box-wrapper'
-            : 'odd w-100 w-30-ns text-box-wrapper'
-        }
+        className={isEven ? 'even text-box-wrapper' : 'odd text-box-wrapper'}
       >
         <div
           className="text-box"

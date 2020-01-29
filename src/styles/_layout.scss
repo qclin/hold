@@ -41,17 +41,11 @@
 }
 
 .project-preview {
+  position: relative;
   color: $txt-gray;
   .image-wrapper,
   .text-box-wrapper {
-    position: absolute;
-
-    &.even {
-      right: -12%;
-    }
-    &.odd {
-      left: -12%;
-    }
+    position: relative;
   }
   .image-wrapper {
     figure {
@@ -98,7 +92,7 @@
   top: 0;
   z-index: 5;
   position: absolute;
-  width: 100%;
+  width: 73vw;
   height: 100%;
 }
 

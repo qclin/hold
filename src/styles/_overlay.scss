@@ -49,22 +49,15 @@ footer {
 #about {
   transition: height 1s linear;
   border-bottom: 1px solid $dark-navy-blue;
-  .content {
-    display: none;
-  }
   .part-2 {
     opacity: 0;
   }
-}
-#about {
-  &.open,
-  &.scroll {
-    .content {
-      display: block;
-      padding: 30px;
-    }
+  .content {
+    display: block;
+    padding: 30px;
   }
 }
+
 #about.open {
   width: 100%;
   position: fixed;
@@ -102,9 +95,8 @@ footer {
   }
 }
 
-#about.scroll {
+#about {
   position: relative;
-  height: 20rem;
   .content {
     height: 10rem;
     overflow: hidden;

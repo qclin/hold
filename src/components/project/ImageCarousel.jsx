@@ -12,8 +12,8 @@ export default function ImageCarousel({ images, onLeft, expanded }) {
     centerPadding: '50px'
   };
   const displayStyle = expanded
-    ? 'expanded w-100 w-70-ns image-wrapper'
-    : 'w-100 w-70-ns image-wrapper';
+    ? 'expanded w-100 image-wrapper'
+    : 'w-100 image-wrapper';
   return (
     <div
       className={
