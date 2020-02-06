@@ -6,7 +6,7 @@
       "date": "2020",
       "brief": "A new website identity for Alianza Pino-Encino, a regional multi-institutional group of organizations with the objective to vitalize local communities living in the Pine-Oak forests of Mesoamerica. ",
       "blurb": "Alianza Pino-Encino is a regional multi-institutional and multi-sector group of organizations with communitarian objectives to vitalize local communities part of the Pine and Oak forests of Mesoamerica. They promote conservation and sustainable management by integrating local efforts, political organizing and funding. As a grassroots alliance, they are in need of greater visibility on the array of projects they have initiated since 2008 in promoting sustainable forestry, conservation of migratory birds, technical training, and educational workshops on the sociopolitical effects of conservation in rural communities. Through open dialogue and research, we will design an updated identity, website and an ongoing mapping scheme that imagines through the question of forest representation and their role in ecological and social life of the region.",
-      "tags": [1, 11, 13, 21, 23, 24, 25, 26],
+      "tags": [11, 13, 24, 25, 26, 23],
       "details": { "intro": "" },
       "images": [
         {
@@ -29,7 +29,7 @@
       "date": "2018-2019",
       "brief": "A website as online ‘living’ archive, the Ocean Archive aims to promote research, discoverability and collaborative multidisciplinary dialogue over the current state of the ocean. Commissioned by TBA21-Academy, development in collaboration with Across the Cloud.",
       "blurb": "The Ocean Archive is an on-going ‘living’ archive with the aim to promote research, discoverability and collaborative multidisciplinary dialogue over the current state of the ocean. Initiated by TBA21-Academy, they have commissioned projects lead by artists, scientists and theorists to expand ocean understanding through the lens of art and science. We researched and prototyped a fluid archival infrastructure with the aim to create a web experience that generates plurality of perspectives - from datasets of a marine biologist to a filmmaker studying deep sea mining. ",
-      "tags": [1, 2, 8, 6, 11, 12, 18, 22, 23, 19, 26],
+      "tags": [2, 8, 6, 12, 18, 23, 19],
       "details": {
         "intro": " The Ocean Archive is an on-going ‘living’ archive with the aim to promote research, discoverability and collaborative multidisciplinary dialogue over the current state of the ocean. Initiated by TBA21-Academy, they have commissioned projects lead by artists, scientists and theorists to expand ocean understanding through the lens of art and science. We researched and prototyped a fluid archival infrastructure with the aim to create a web experience that generates plurality of perspectives - from datasets of a marine biologist to a filmmaker studying deep sea mining. "
       },
@@ -58,7 +58,7 @@
       "date": "2018-2019",
       "brief": "A platform for a digital emergency unit established by MSF called Reaction Assessment Collaboration Hub (REACH) which provides support for real-time decision making for logistical distribution during evolving epidemics in Southeast Asia. Development in collaboration with Across the Cloud and interface design with Paul Heinicker.",
       "blurb": "The international NGO Médecins Sans Frontières established a digital emergency response unit in 2018. With MSF REACH REaction Assessment Collaboration Hub they introduced a platform that is used by across MSF operation centers in Europe to oversee rapidly evolving emergencies in Asia and support effective decision for dispatching medical resource. A particular focus of the initiative is to combine internal reporting from ground operators with crowd-sourced information, e.g. instant messaging, social networking and RSS feeds, in real-time. We supported MSF to improve their response times in emergency situations and to enhance all information processing activities across the MSF REACH platform.",
-      "tags": [9, 10, 14, 15, 16, 17, 18, 19, 20],
+      "tags": [9, 16, 18, 19, 20],
       "details": {
         "intro": "The first version of MSF REACH was spearheaded by [Across the Cloud Pty Ltd](https://acrossthecloud.net/) with an established cloud infrastructure, clear REST application protocol and server-side rendering of html pages.  It was backend driven development, which laid the foundations but as project scope widens and more features were added, the views got more complicated and the layouts more cramped. We were bought onto the project to consider the complexity of the dashboard logistics and implement the front end with particular focus on user experience. Our approach was guided by an initial understanding of prevailing structures of the existing REACH platform. The actual technical realisation was then realised in sync with adaptation of standardized design systems. \n\r\n\r The whole procedure can be divided into four major sequences that are mutually dependent. \n\r ### Our challenges: \n\r – global scale -> to address multiple timezones & language localization \n\r – mapping of real time feeds (satellite imagery but also social media) for monitoring \n\r – reporting hierarchies (notifications, crowd-sourced report cards, situation reports)",
 

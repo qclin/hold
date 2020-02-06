@@ -89,8 +89,8 @@
   }
 }
 @media (min-width: 1025px) {
-  .image-wrapper img {
-    max-width: 80%;
+  .image-wrapper figure img {
+    width: 80%;
   }
   .show-next img {
     margin-left: 20%;
@@ -100,7 +100,10 @@
     display: block;
   }
   .teal-overlay {
-    height: calc(100% - 38px);
+    width: 80%;
+  }
+  .show-next .teal-overlay {
+    margin-left: 20%;
   }
 }
 

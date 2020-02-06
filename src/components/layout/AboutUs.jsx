@@ -31,7 +31,7 @@ export default function AboutUs(props) {
             >
               {!isScroll && (
                 <a href="#hold">
-                  <img src="./icons/black-copy@3x.png" />
+                  <img id="mobile-back" src="./icons/black-copy.svg" />
                 </a>
               )}
             </span>
@@ -77,16 +77,15 @@ export default function AboutUs(props) {
             </div>
           </div>
         </div>
+
         <span
           id="openAbout"
           className="absolute"
           onClick={() => handleAboutToggle(isScroll)}
         >
-          {isScroll ? (
-            <img src="./icons/expand.svg" />
-          ) : (
-            <img id="collapse" src="./icons/collapse.svg" />
-          )}
+          <div id="about-toggle-icon" className={isScroll ? '' : 'collapse'}>
+            <img src="./icons/expand-no-fill.svg" />
+          </div>
         </span>
       </div>
     </>

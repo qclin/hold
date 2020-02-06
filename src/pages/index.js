@@ -22,23 +22,22 @@ export default () => {
         handleAboutToggle={setAboutOn}
         showNav={showFrame}
       />
+
       <div
         id="page-body"
         className={blurContext ? 'blur' : ''}
         onClick={() => {
-          if (blurContext) {
-            setAboutOn(false);
-            setContactOn(false);
-          }
+          setAboutOn(false);
+          setContactOn(false);
         }}
       ></div>
-      <div className={blurContext && 'blur-content'}>
-        <div id="project-section">
-          {projects.map((project, index) => (
-            <ProjectPreview model={project} key={project.id} index={index} />
-          ))}
-        </div>
+
+      <div id="project-section" className={blurContext ? 'blur-content' : ''}>
+        {projects.map((project, index) => (
+          <ProjectPreview model={project} key={project.id} index={index} />
+        ))}
       </div>
+
       <Contact
         contactOn={contactOn}
         showFooter={showFrame}

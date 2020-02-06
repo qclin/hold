@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="28px" viewBox="0 0 29 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>expand</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="expand" transform="translate(-11.000000, -11.000000)" fill-rule="nonzero">
+            <polygon id="Path" points="0 0 50 0 50 50 0 50"></polygon>
+            <path d="M39.108,38.94 L36.191,30.544 L30.711,36.024 L39.108,38.941 L39.108,38.94 Z M11.658,12.022 L33.451,33.814 L33.716,34.079 L34.246,33.549 L33.981,33.284 L12.19,11.49 L11.925,11.225 L11.395,11.755 L11.659,12.021 L11.658,12.022 Z" id="Shape" fill="#3B3B3B"></path>
+        </g>
+    </g>
+</svg>

@@ -60,12 +60,6 @@
 
 // laptop
 @media (min-width: 1025px) {
-  .show-next .teal-overlay {
-    margin-left: 2.2%;
-  }
-  .teal-overlay {
-    width: 73vw;
-  }
   .project-preview {
     .text-box-wrapper {
       position: absolute;
@@ -96,18 +90,18 @@
   #project-section {
     margin: 0 2.2rem;
   }
-  .project-preview:first-of-type {
-    margin-top: 6.5rem;
-  }
   .project-preview {
     margin-bottom: 6.5rem;
+    &:first-of-type {
+      margin-top: 6.5rem;
+    }
   }
 
   #about {
     height: 26.5rem;
-  }
-  #about.open {
-    height: 100vh;
+    &.open {
+      height: 100vh;
+    }
   }
 }
 
@@ -129,6 +123,10 @@
 
 // 4k screen
 @media (min-width: 2560px) {
+  #project-section {
+    max-width: 2400px;
+    margin: auto;
+  }
   .measure-wide {
     max-width: 1185px;
   }
@@ -167,10 +165,7 @@
       }
     }
   }
-  #about.scroll .content .text-box-wrapper {
-    top: -20px;
-    z-index: 8;
-  }
+
   .project-preview {
     .text-box {
       position: relative;
