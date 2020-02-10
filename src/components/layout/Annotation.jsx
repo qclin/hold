@@ -53,5 +53,5 @@ export function renderImage(image) {
       <object data={image} type="application/pdf" width="250" height="300" />
     );
   }
-  return <img src={image} />;
+  return <img className="dib" src={image} />;
 }

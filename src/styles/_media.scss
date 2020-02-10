@@ -2,6 +2,10 @@
   .project-preview {
     .text-box-wrapper {
       position: absolute;
+      .time-stamp {
+        margin-bottom: 0.8rem;
+      }
+
       &.even {
         right: 0%;
       }
@@ -108,7 +112,10 @@
 // Large - laptop
 @media (min-width: 1440px) {
   #about.open {
-    height: 85vh;
+    height: 100vh;
+    transition: background-color 2s ease-out;
+    background: $primary-blue;
+    color: $page-white;
   }
 
   @keyframes dropHeight {
@@ -116,7 +123,7 @@
       height: 30rem;
     }
     to {
-      height: 85vh;
+      height: 100vh;
     }
   }
 }
@@ -132,14 +139,25 @@
   }
 }
 
+// mobile screen
+
 @media (max-width: 768px) {
   p.project-description.expand {
+    margin-top: 4rem;
     margin-bottom: 1.2rem;
   }
 
   .text-box {
     max-width: 100%;
   }
+
+  #about {
+    .content {
+      height: 10rem;
+      margin-bottom: 10rem;
+    }
+  }
+
   #about.open {
     height: 100vh;
   }
@@ -151,9 +169,10 @@
     display: block;
   }
   #back {
+    z-index: 10;
     height: 3rem;
     width: 3rem;
-    top: 1.5rem;
+    top: 3rem;
     left: 1.5rem;
   }
   #about {
@@ -165,26 +184,15 @@
       }
     }
   }
+  .open {
+    #openAbout {
+      display: none;
+    }
+  }
 
   .project-preview {
     .text-box {
       position: relative;
     }
-  }
-  .project-description,
-  .project-tag-wrapper {
-    transition: opacity 1s linear;
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-  }
-
-  .project-tag-wrapper {
-    margin: 0;
-  }
-
-  .expand {
-    opacity: 1;
-    height: auto;
   }
 }

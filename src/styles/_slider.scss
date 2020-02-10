@@ -73,14 +73,9 @@
 
 // mobile
 @media (max-width: 768px) {
+  .slick-next:before,
   .slick-next:before {
     display: none;
-  }
-  .expanded {
-    .slick-next:before {
-      display: block;
-      content: url('../public/icons/mobile.svg') !important;
-    }
   }
 }
 @media (max-width: 1024px) {

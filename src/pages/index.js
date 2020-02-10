@@ -13,12 +13,13 @@ export default () => {
   const [aboutOn, setAboutOn] = useState(false);
   const [contactOn, setContactOn] = useState(false);
 
-  const blurContext = aboutOn || contactOn;
+  const blurContext = contactOn;
   const showFrame = scroll.y > 439;
   return (
     <div className={aboutOn ? 'main modal-open' : 'main'}>
       <AboutUs
         type={aboutOn ? 'open' : 'scroll'}
+        isVisible={aboutOn}
         handleAboutToggle={setAboutOn}
         showNav={showFrame}
       />
@@ -27,7 +28,6 @@ export default () => {
         id="page-body"
         className={blurContext ? 'blur' : ''}
         onClick={() => {
-          setAboutOn(false);
           setContactOn(false);
         }}
       ></div>

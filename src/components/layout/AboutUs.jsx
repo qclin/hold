@@ -4,14 +4,19 @@ import Annotation, { renderImage, renderMark } from './Annotation';
 
 export default function AboutUs(props) {
   const { footnotes } = useRouteData();
-  const { type, handleAboutToggle, showNav } = props;
+  const { type, isVisible, handleAboutToggle, showNav } = props;
   const isScroll = type == 'scroll';
   const aboutRef = useRef(null);
 
   return (
     <>
       <nav
-        onClick={() => handleAboutToggle(true)}
+        onClick={() => {
+          if (isVisible) {
+            aboutRef.current.scrollTo(0, 0);
+          }
+          handleAboutToggle(!isVisible);
+        }}
         id="hold"
         className={showNav ? 'show' : 'hide'}
       >
@@ -21,20 +26,6 @@ export default function AboutUs(props) {
         <div className="content" ref={aboutRef}>
           <div className="w-100 w-75-ns measure-wide">
             <span id="holder"></span>
-            <span
-              id="back"
-              className="fixed"
-              onClick={() => {
-                handleAboutToggle(false);
-                aboutRef.current.scrollTo(0, 0);
-              }}
-            >
-              {!isScroll && (
-                <a href="#hold">
-                  <img id="mobile-back" src="./icons/black-copy.svg" />
-                </a>
-              )}
-            </span>
             <p>
               Hold
               <Annotation id={1} key={1} footnote={footnotes[0]} isMark />{' '}
@@ -69,7 +60,7 @@ export default function AboutUs(props) {
             <div class="mobile footnotes">
               {footnotes.map((note, index) => (
                 <div id={`footnote-${note.id}`}>
-                  <span className="bg-pale pa1">{note.id}</span>
+                  <span className="bg-pale pa1 label">{note.id}</span>
                   {renderMark(note.text)}
                   {note.images && note.images.map(img => renderImage(img))}
                 </div>

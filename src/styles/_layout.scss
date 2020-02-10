@@ -78,9 +78,6 @@
     }
   }
 }
-.time-stamp {
-  margin-bottom: 0.8rem;
-}
 
 .image-wrapper:hover {
   .teal-overlay {
@@ -90,6 +87,7 @@
   }
 }
 .teal-overlay {
+  transition: background-color 1s ease-in;
   top: 0;
   z-index: 5;
   position: absolute;

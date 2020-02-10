@@ -18,6 +18,7 @@ footer {
   bottom: 0;
   background: $page-white;
   border-top: 1px solid $dark-navy-blue;
+  transition: height 1s linear;
   &.showContact {
     height: auto;
     background: $page-white;
@@ -43,11 +44,12 @@ footer {
 }
 #openAbout {
   bottom: 1rem;
-  right: 2rem;
+  right: 1rem;
   cursor: pointer;
 }
 #about {
-  transition: height 1s linear;
+  background: $page-white;
+  transition: height 0.3s ease-in-out, background-color 2s ease-out;
   border-bottom: 1px solid $dark-navy-blue;
   .part-2 {
     opacity: 0;
@@ -78,8 +80,6 @@ footer {
 }
 #about.open {
   width: 100%;
-  position: fixed;
-  z-index: 20;
   height: 100vh;
   background: $page-white;
   animation: dropHeight 1s;
