@@ -16,7 +16,7 @@
     "@reach/router": "^1.2.1",
     "axios": "^0.19.2",
     "lodash": "^4.17.15",
-    "marked": "^0.7.0",
+    "marked": "^4.0.10",
     "prettier": "^1.19.1",
     "react": "^16.12.0",
     "react-slick": "^0.25.2",
